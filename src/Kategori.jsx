@@ -1,4 +1,4 @@
-function Forside() {
+function Kategori() {
     return (
         <>
         </>
@@ -6,4 +6,4 @@ function Forside() {
 }
 
 
-export default Forside;
+export default Kategori;
