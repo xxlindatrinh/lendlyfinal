@@ -1,3 +1,5 @@
+import '../css/Forside.css';
+
 function Kategori() {
     return (
         <>

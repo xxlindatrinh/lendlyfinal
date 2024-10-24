@@ -1,3 +1,5 @@
+import '../css/OpretProfil.css';
+
 function Forside() {
     return (
         <>

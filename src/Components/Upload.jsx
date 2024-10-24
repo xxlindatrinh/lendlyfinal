@@ -1,3 +1,5 @@
+import '../css/Upload.css';
+
 function Forside() {
     return (
         <>

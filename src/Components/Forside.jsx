@@ -1,4 +1,9 @@
-function Onboarding() {}
+import '../css/Forside.css';
+
+function Onboarding() {
+  return <></>;
+}
+
 
 function Forside() {
   return (
