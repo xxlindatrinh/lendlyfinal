@@ -1,12 +1,18 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css'
-import Onboarding from './Onboarding';
+import Forside from './Forside';
+import Kategori from './Kategori';
+import Profil from './Profil';
+import OpretProfil from './OpretProfil';
 
  function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path='/' element={<Onboarding />} />
+                <Route path='/' element={<Forside />} />
+                <Route path='/Kategori' element={<Kategori />} />
+                <Route path='/Profil' element={<Profil />} />
+                <Route path='/OpretProfil' element={<OpretProfil />} />
             </Routes>
         </BrowserRouter>
     );
