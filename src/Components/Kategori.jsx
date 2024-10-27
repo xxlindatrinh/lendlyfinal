@@ -1,4 +1,4 @@
-import '../css/Forside.css';
+import '../css/Kategori.css';
 
 function Kategori() {
     return (
