@@ -1,0 +1,27 @@
+/* Container Styling */
+.soeg, .populaer, .alle-kategorier {
+    margin: 0;
+    margin-left: 20px; /* Adjust this value for the desired left margin */
+}
+
+/* Styling for each item */
+.kategori-item {
+    display: flex;
+    align-items: left;
+    padding: 5px 0;
+}
+
+/* Icon Styling */
+.kategori-item img {
+    width: 40px; /* Adjust based on desired icon size */
+    height: 40px;
+    margin-right: 20px;
+    background-color: #e0e0e0; /* Background for rounded icons */
+    border-radius: 50%;
+}
+
+/* Headings */
+.populaer h2, .alle-kategorier h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
