@@ -4,9 +4,8 @@ import Forside from "./Forside";
 import Kategori from "./Kategori";
 import Upload from "./Upload";
 import Profil from "./Profil";
-import OpretProfil from "./OpretProfil";
 import BottomNav from "./BottomNav";
-import Opretprofil from "./Opretprofil/Opretprofil";
+import Opretprofil from "./Opretprofil";
 
 function App() {
   return (
