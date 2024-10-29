@@ -3,7 +3,11 @@ import '../css/Kategori.css';
 function Kategori() {
     return (
         <>
-            <div className='soeg'>
+        <div>
+            
+        </div>    
+
+            <div className='mine-kategorier'>
                 <div className="kategori-item">
                     <img src="/ikoner/hjerte_ikon.svg" alt="Gemte varer icon" />
                     <span>Mine gemte varer</span>
