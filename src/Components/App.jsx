@@ -23,7 +23,7 @@ function Main() {
   const location = useLocation(); // Get the current location
 
   // Specify the routes where BottomNav should NOT appear
-  const noBottomNavRoutes = ["/OpretProfil"]; // BottomNav will not appear on this route
+  const noBottomNavRoutes = ["/Opretprofil"]; // BottomNav will not appear on this route
 
   const showBottomNav = !noBottomNavRoutes.includes(location.pathname);
 
@@ -34,7 +34,7 @@ function Main() {
         <Route path="/Kategori" element={<Kategori />} />
         <Route path="/Upload" element={<Upload />} />
         <Route path="/Profil" element={<Profil />} />
-        <Route path="/OpretProfil" element={<OpretProfil />} />
+        <Route path="/Opretprofil" element={<Opretprofil />} />
       </Routes>
       {showBottomNav && <BottomNav />} {/* Conditionally render BottomNav */}
     </>

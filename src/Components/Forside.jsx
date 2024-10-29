@@ -1,4 +1,4 @@
-import '../css/Forside.css';
+import "../css/Forside.css";
 
 function Forside() {
   return (
