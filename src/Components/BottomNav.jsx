@@ -9,9 +9,8 @@ function BottomNav() {
     return (
         <nav className="bottom-nav">
             <NavLink to="/" className="nav-item">
-                <img src="/ikoner/hjem_ikon.svg" alt="Home Icon" />
+                <img src="/ikoner/hjem_ikon.svg" alt="Home Icon" /> 
             </NavLink>
-
             <NavLink to="/Kategori" className="nav-item">
                 <img src="/ikoner/søge_ikon.svg" alt="Home Icon" />
             </NavLink>

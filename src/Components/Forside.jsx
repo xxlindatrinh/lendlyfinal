@@ -1,14 +1,13 @@
 import '../css/Forside.css';
 
-function Onboarding() {
-  return <></>;
-}
-
-
 function Forside() {
   return (
     <>
-      <h1>hej alle sammen</h1>
+    <div className='forside-kategori-scroll'>
+      <h1>
+        Horisontal scroll
+      </h1>
+    </div>
     </>
   );
 }
