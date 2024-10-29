@@ -21,11 +21,11 @@ const Opretprofil = () => {
         )}
 
         <div className="input">
-          <img src={email_icon} alt="" />
+          <img src="/ikoner/email.svg" alt="" />
           <input type="email" placeholder="Email" />
         </div>
         <div className="input">
-          <img src={password_icon} alt="" />
+          <img src="/ikoner/password.svg" alt="" />
           <input type="password" placeholder="Adgangskode" />
         </div>
       </div>
