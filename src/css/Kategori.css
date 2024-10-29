@@ -1,14 +1,22 @@
 /* Container Styling */
+body {
+    margin:0;
+}
+
 .soeg, .populaer, .alle-kategorier {
     margin: 0;
-    margin-left: 20px; /* Adjust this value for the desired left margin */
+    display: flex;
+    flex-direction: column;  /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
 }
 
 /* Styling for each item */
 .kategori-item {
     display: flex;
-    align-items: left;
-    padding: 5px 0;
+    align-items: center; /* Center items vertically */
+    justify-content: left; /* Center items horizontally */
+    gap: 10px; /* Space between icon and text */
+    padding: 10px;
 }
 
 /* Icon Styling */
