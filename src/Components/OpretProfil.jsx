@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../css/Opretprofil.css";
 
-
 const Opretprofil = () => {
   const [action, setAction] = useState("Opret dig");
 
