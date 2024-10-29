@@ -9,13 +9,9 @@ import Opretprofil from "./Opretprofil";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Main />
-      </BrowserRouter>
-
-      <Opretprofil />
-    </>
+    <BrowserRouter>
+      <Main />
+    </BrowserRouter>
   );
 }
 
@@ -23,8 +19,9 @@ function Main() {
   const location = useLocation(); // Get the current location
 
   // Specify the routes where BottomNav should NOT appear
-  const noBottomNavRoutes = ["/Opretprofil"]; // BottomNav will not appear on this route
+  const noBottomNavRoutes = ["/Opretprofil"]; // Match exact route path
 
+  // Check if the current path is NOT in the noBottomNavRoutes array
   const showBottomNav = !noBottomNavRoutes.includes(location.pathname);
 
   return (
