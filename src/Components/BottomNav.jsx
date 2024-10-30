@@ -17,12 +17,13 @@ function BottomNav() {
             <NavLink to="/Upload" className="nav-item">
                 <img src="/ikoner/upload_ikon.svg" alt="Home Icon" />
             </NavLink>
-            <NavLink to="/OpretProfil" className="nav-item">
+            <NavLink to="/Indbakke" className="nav-item">
                 <img src="/ikoner/indbakke_ikon.svg" alt="Home Icon" />
             </NavLink>
             <NavLink to="/Profil" className="nav-item profile-icon">
                 <img src="/ikoner/profil_ikon_menubar.svg" alt="Home Icon" />
             </NavLink>
+
         </nav>
     );
 }

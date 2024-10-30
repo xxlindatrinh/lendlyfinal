@@ -1,6 +1,6 @@
 import '../css/Upload.css';
 
-function Forside() {
+function Upload() {
     return (
         <>
         </>
@@ -8,4 +8,4 @@ function Forside() {
 }
 
 
-export default Forside;
+export default Upload;
