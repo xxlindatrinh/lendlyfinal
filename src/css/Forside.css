@@ -58,10 +58,11 @@ h1{
 /* Forside.css */
 
 .forside-container {
-    text-align: center;
-    width: 100%;
-    overflow-x:hidden;
-  }
+  text-align: center;
+  width: 100%;
+  overflow-x: hidden;
+  padding-bottom: 80px; /* Ekstra plads til BottomNav */
+}
   
   .forside-container h1 {
     font-size: 20px;
