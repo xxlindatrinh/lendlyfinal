@@ -4,7 +4,14 @@ body {
     padding-bottom: 61px;
 }
 
+.mine-kategorier .kategori-item span,
+.populaer .kategori-item span,
+.alle-kategorier .kategori-item span {
+    font-size: 18px; /* Set the desired font size */
+}
+
 .mine-kategorier, .populaer, .alle-kategorier {
+
     margin: 0;
     display: flex;
     flex-direction: column;  /* Stack items vertically */
