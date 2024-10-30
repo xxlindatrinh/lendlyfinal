@@ -5,34 +5,34 @@ function Forside() {
     <>
 
 <div>
-            <h1>Horizontal Scroll Categories</h1>
+            <h1>Her skal der være searchbar</h1>
             <div>
-                <a href="#">
+                <a href="#" className="forside-kategori">
                     <span>
                         <span>Hus og have</span>
                     </span>
                 </a>
-                <a href="#">
+                <a href="#" className="forside-kategori">
                     <span>
                         <span>Værktøj</span>
                     </span>
                 </a>
-                <a href="#">
+                <a href="#" className="forside-kategori">
                     <span>
                         <span>Elektronik</span>
                     </span>
                 </a>
-                <a href="#">
+                <a href="#" className="forside-kategori">
                     <span>
                         <span>Tøj</span>
                     </span>
                 </a>
-                <a href="#">
+                <a href="#" className="forside-kategori">
                     <span>
                         <span>Hobby</span>
                     </span>
                 </a>
-                <a href="#">
+                <a href="#" className="forside-kategori">
                     <span>
                         <span>Diverse</span>
                     </span>
