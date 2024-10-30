@@ -6,6 +6,7 @@ import Upload from "./Upload";
 import Profil from "./Profil";
 import BottomNav from "./BottomNav";
 import Opretprofil from "./Opretprofil";
+import Onboarding from "./Onboarding";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function Main() {
         <Route path="/Kategori" element={<Kategori />} />
         <Route path="/Upload" element={<Upload />} />
         <Route path="/Profil" element={<Profil />} />
+        <Route path="/Onboarding" element={<Onboarding />} />
         <Route path="/Opretprofil" element={<Opretprofil />} />
       </Routes>
       {showBottomNav && <BottomNav />} {/* Conditionally render BottomNav */}

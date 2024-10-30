@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import "../css/Onboarding.css";
 
-function Onboarding() {
-  const [page, setPage] = useState(1);
+const Onboarding = () => {
+  const [page, setPage] = useState(1); // Initialize the page state
 
   // Function to handle "Accepter" button
   const handleAccept = () => {
     if (page < 3) {
       setPage(page + 1); // Go to the next onboarding page
     }
-    // Add logic to proceed if onboarding is complete
   };
 
   return (
@@ -63,6 +62,6 @@ function Onboarding() {
       )}
     </div>
   );
-}
+};
 
 export default Onboarding;
