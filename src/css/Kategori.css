@@ -1,6 +1,7 @@
 /* Container Styling */
 body {
     margin:0;
+    padding-bottom: 61px;
 }
 
 .mine-kategorier, .populaer, .alle-kategorier {

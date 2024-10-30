@@ -1,4 +1,7 @@
 /* BottomNav.css */
+body{
+    overflow-x:hidden;
+}
 
 .bottom-nav {
     position: fixed;
@@ -35,6 +38,6 @@
 }
 
 img {
-    width: 50px;
+    width: 40px;
     object-fit: contain;
 }
