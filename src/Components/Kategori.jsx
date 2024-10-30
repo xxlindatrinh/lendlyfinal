@@ -29,7 +29,7 @@ function Kategori() {
                     <span>Hus og have</span>
                 </div>
                 <div className="kategori-item">
-                    <img src="/ikoner/.svg" alt="Kreative værktøjer icon" />
+                    <img src="/ikoner/maleikon.svg" alt="Kreative værktøjer icon" />
                     <span>Kreative værktøjer</span>
                 </div>
             </div>
