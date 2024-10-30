@@ -10,7 +10,7 @@ function Profil() {
             
             <div className="profile-info">
                 <div className="profile-picture">
-                    <img src="/ikoner/profil.svg" alt="Profile" />
+                    <img src="ikoner/profil.svg" alt="Profile" />
                 </div>
                 <div className="profile-name">
                     <p>Mit navn</p>
@@ -24,6 +24,7 @@ function Profil() {
                 <button className="option-button">Mine lejeaftaler</button>
                 <button className="option-button">Mine udlejninger</button>
                 <button className="option-button">Brugertilpasning</button>
+                <button className="option-button">Mine grupper</button>
             </div>
 
             <div className="profile-extras">
@@ -40,3 +41,4 @@ function Profil() {
 }
 
 export default Profil;
+
