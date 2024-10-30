@@ -41,3 +41,8 @@ img {
     width: 40px;
     object-fit: contain;
 }
+
+.profile-icon img {
+    height: 33px;
+    padding-bottom: 4px;
+}
