@@ -77,3 +77,35 @@
   max-height: 100%;
   border-radius: 12px;
 }
+
+.onboarding-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.terms-container,
+.image-slide {
+  width: 100%;
+  max-width: 400px;
+}
+
+.location-image {
+  width: 100%;
+  height: auto;
+  max-width: 300px; /* Set max width for larger image */
+  margin: 10px 0;
+}
+
+.image-slide h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.image-slide p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+}

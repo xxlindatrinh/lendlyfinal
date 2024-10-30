@@ -7,6 +7,7 @@ import Profil from "./Profil";
 import BottomNav from "./BottomNav";
 import Opretprofil from "./Opretprofil";
 import Indbakke from "./Indbakke";
+import Onboarding from "./Onboarding";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function Main() {
         <Route path="/Profil" element={<Profil />} />
         <Route path="/Opretprofil" element={<Opretprofil />} />
         <Route path="/Indbakke" element={<Indbakke />} />
+        <Route path="/Onboarding" element={<Onboarding />} />
       </Routes>
       {showBottomNav && <BottomNav />} {/* Conditionally render BottomNav */}
     </>

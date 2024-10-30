@@ -55,10 +55,16 @@ function Onboarding() {
       )}
       {page > 1 && page <= 3 && (
         <div className="image-slide">
+          <h2>Vælg lokation</h2> {}
           <img
-            src={`/images/onboarding-image-${page}.jpg`}
+            src={`/ikoner/find_lokation.svg`}
             alt={`Onboarding Slide ${page}`}
+            className="location-image"
           />
+          <p>
+            Find ting i nærheden, som du kan låne, ved at sætte din lokation.
+          </p>{" "}
+          {}
         </div>
       )}
     </div>
