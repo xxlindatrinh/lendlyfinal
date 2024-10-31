@@ -5,6 +5,7 @@ body {
 
 .profil-container {
     margin:0;
+    padding:0;
     background-color: #d9d9b2;
     padding-bottom: 80px;
     overflow-x:hidden;
@@ -44,10 +45,27 @@ body {
     margin-bottom: 20px;
 }
 
+.profile-picture {
+    margin-right: 15px; /* Adds spacing between the picture and the name */
+}
+
+.profile-name {
+    display: flex;
+    flex-direction: column; /* Stacks the p and span vertically */
+    text-align: left; /* Ensures text is aligned to the left */
+}
+
 .profile-name p {
     margin: 0;
+    font-size: 24px;
     font-weight: bold;
 }
+
+.profile-name span {
+    margin: 0;
+    font-size: 18px;
+}
+
 
 .profile-options, .profile-extras, .profile-holiday {
     margin-top: 20px;
