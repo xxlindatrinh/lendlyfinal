@@ -1,12 +1,24 @@
+/* Nulstil margin og padding for at fjerne luft omkring containeren */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+}
+
 .onboarding-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f5f5f5;
-  padding: 20px;
+  width: 100vw;
+  background-color: #ffffff;
   box-sizing: border-box;
+  padding: 0;
+  text-align: center; /* Tilføj dette for at centrere tekst */
 }
 
 .terms-container {
@@ -31,6 +43,7 @@
   margin: 0;
   color: #333;
   font-size: 16px;
+  text-align: left;
 }
 
 .switches {
@@ -66,11 +79,14 @@
 
 .image-slide {
   display: flex;
-  flex-direction: column; /* Changed to column for vertical layout */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto; /* Allow height to adjust based on content */
+  padding-left: 20px; /* Juster efter behov */
+  padding-right: 20px; /* Juster efter behov */
+  box-sizing: border-box; /* Sørger for, at padding ikke ændrer bredden */
+  background-color: #ffffff;
 }
 
 .image-slide img {
@@ -78,7 +94,7 @@
   max-width: 300px;
   height: auto;
   border-radius: 12px;
-  margin: 2px;
+  margin: 0 auto; /* Sørger for at billedet er centreret */
   object-fit: cover;
 }
 
