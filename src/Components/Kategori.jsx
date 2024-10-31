@@ -3,6 +3,16 @@ import '../css/Kategori.css';
 function Kategori() {
     return (
         <>
+        <header className="profil-header">
+                <div id='back-button'>
+                <button className="back-button">&lt; Tilbage</button>
+                </div>
+                <div>
+                <h1>Kategorier</h1>
+                </div>
+                <div>
+                </div>
+            </header>
         <div>
             
         </div>    

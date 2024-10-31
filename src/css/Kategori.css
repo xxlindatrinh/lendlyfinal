@@ -2,6 +2,37 @@
 body {
     margin:0;
     padding-bottom: 4.4375rem;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+.profil-header {
+    display: flex;
+    align-items: center; /* Centers items vertically on the same line */
+    justify-content: center; /* Centers the h1 horizontally */
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    position: relative; /* Allows absolute positioning for the button */
+    padding: 10px 0;
+}
+
+#back-button {
+    padding-bottom: 20px;
+}
+
+.back-button {
+    font-size: 16px;
+    background: none;
+    border: none;
+    position: absolute; /* Absolutely positioned to the left */
+    left: 20px; /* Adjust this value to set the distance from the left edge */
+    transform: translateY(0); /* Fine-tune vertical alignment, if needed */
+}
+
+div {
+    padding-left: 20px;
 }
 
 .mine-kategorier .kategori-item span,
