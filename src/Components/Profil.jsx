@@ -1,16 +1,25 @@
 import '../css/Profil.css';
+import { Link } from 'react-router-dom';
+
 
 function Profil() {
     return (
+        <>
         <div className="profil-container">
-            <header className="profil-header">
-                <button className="back-button">Tilbage</button>
+        <header className="profil-header">
+                <div id='back-button'>
+                <button className="back-button">&lt; Tilbage</button>
+                </div>
+                <div>
                 <h1>Profil</h1>
+                </div>
+                <div>
+                </div>
             </header>
             
             <div className="profile-info">
                 <div className="profile-picture">
-                    <img src="/ikoner/profil.svg" alt="Profile" />
+                    <img src="ikoner/profil.svg" alt="Profile" />
                 </div>
                 <div className="profile-name">
                     <p>Mit navn</p>
@@ -20,10 +29,14 @@ function Profil() {
 
             <div className="profile-options">
                 <button className="option-button">Din guide til Lendly</button>
-                <button className="option-button">Mine favoritter</button>
+                <Link to="/Favoritter" className="option-button">
+                    Mine favoritter
+                </Link>
+
                 <button className="option-button">Mine lejeaftaler</button>
                 <button className="option-button">Mine udlejninger</button>
                 <button className="option-button">Brugertilpasning</button>
+                <button className="option-button">Mine grupper</button>
             </div>
 
             <div className="profile-extras">
@@ -36,7 +49,9 @@ function Profil() {
                 <button className="option-button">Ferie­tilstand</button>
             </div>
         </div>
+        </>
     );
 }
 
 export default Profil;
+

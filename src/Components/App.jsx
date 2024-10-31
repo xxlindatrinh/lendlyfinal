@@ -8,6 +8,7 @@ import BottomNav from "./BottomNav";
 import Opretprofil from "./Opretprofil";
 import Indbakke from "./Indbakke";
 import Onboarding from "./Onboarding";
+import Favoritter from "./Favoritter";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function Main() {
         <Route path="/Opretprofil" element={<Opretprofil />} />
         <Route path="/Indbakke" element={<Indbakke />} />
         <Route path="/Onboarding" element={<Onboarding />} />
+        <Route path="/Favoritter" element={<Favoritter />} />
       </Routes>
       {showBottomNav && <BottomNav />} {/* Conditionally render BottomNav */}
     </>
