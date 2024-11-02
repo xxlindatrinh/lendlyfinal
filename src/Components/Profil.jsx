@@ -17,15 +17,15 @@ function Profil() {
                 </div>
             </header>
             
-            <div className="profile-info">
-                <div className="profile-picture">
-                    <img src="ikoner/profil.svg" alt="Profile" />
-                </div>
-                <div className="profile-name">
-                    <p>Mit navn</p>
-                    <span>Vis min profil</span>
-                </div>
+            <Link to="/Omprofil" className="profile-info">
+            <div className="profile-picture">
+                <img src="ikoner/profil.svg" alt="Profile" />
             </div>
+            <div className="profile-name">
+                <p>Mit navn</p>
+                <span>Vis min profil</span>
+            </div>
+            </Link>
 
             <div className="profile-options">
                 <button className="option-button">Din guide til Lendly</button>

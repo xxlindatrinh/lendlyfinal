@@ -11,6 +11,7 @@ import Onboarding from "./Onboarding";
 import Favoritter from "./Favoritter";
 import OmProfil from "./OmProfil";
 
+
 function App() {
   return (
     <BrowserRouter>

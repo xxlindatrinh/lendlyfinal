@@ -2,6 +2,11 @@
 body{
   overflow-x: hidden;
   padding-bottom: 4.4375rem;
+  padding-left: 0;
+}
+
+div {
+  padding:0;
 }
 
 .wrapper{

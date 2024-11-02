@@ -1,12 +1,24 @@
+/* Nulstil margin og padding for at fjerne luft omkring containeren */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+}
+
 .onboarding-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f5f5f5;
-  padding: 20px;
+  width: 100vw;
+  background-color: #ffffff;
   box-sizing: border-box;
+  padding: 0;
+  text-align: center; /* Tilføj dette for at centrere tekst */
 }
 
 .terms-container {
@@ -31,6 +43,7 @@
   margin: 0;
   color: #333;
   font-size: 16px;
+  text-align: left;
 }
 
 .switches {
@@ -66,46 +79,65 @@
 
 .image-slide {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  padding-left: 20px; /* Juster efter behov */
+  padding-right: 20px; /* Juster efter behov */
+  box-sizing: border-box; /* Sørger for, at padding ikke ændrer bredden */
+  background-color: #ffffff;
 }
 
 .image-slide img {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 12px;
-}
-
-.onboarding-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-}
-
-.terms-container,
-.image-slide {
   width: 100%;
-  max-width: 400px;
-}
-
-.location-image {
-  width: 100%;
+  max-width: 300px;
   height: auto;
-  max-width: 300px; /* Set max width for larger image */
-  margin: 10px 0;
+  border-radius: 12px;
+  margin: 0 auto; /* Sørger for at billedet er centreret */
+  object-fit: cover;
 }
 
 .image-slide h2 {
   font-size: 1.5rem;
-  color: #333;
+  color: #000000;
+  margin-bottom: 10px; /* Space between heading and image */
 }
 
 .image-slide p {
   font-size: 1rem;
-  color: #666;
-  margin-top: 10px;
+  color: #000000;
+}
+
+.onboarding-image-1 {
+  width: 100%; /* Juster bredde, hvis nødvendigt */
+  max-width: 300px; /* Juster maksimal bredde for billede 1 */
+  height: auto; /* Behold aspektforholdet */
+}
+
+.onboarding-image-2 {
+  width: 100%; /* Juster bredde, hvis nødvendigt */
+  max-width: 600px; /* Juster maksimal bredde for billede 2 */
+  height: auto; /* Behold aspektforholdet */
+}
+
+.onboarding-image-3 {
+  width: 100%; /* Juster bredde, hvis nødvendigt */
+  max-width: 600px; /* Juster maksimal bredde for billede 2 */
+  height: auto; /* Behold aspektforholdet */
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333; /* Juster farve efter behov */
+}
+
+.close-button:hover {
+  color: #555; /* Juster hover-farve efter behov */
 }
