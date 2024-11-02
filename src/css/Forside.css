@@ -4,6 +4,10 @@ body{
   padding-bottom: 4.4375rem;
 }
 
+.wrapper{
+  padding:0;
+}
+
 h1{
   font-size: 28px;
 }
@@ -78,6 +82,7 @@ h1{
 }
 
 .forside-kategori {
+    padding: 0;
     display: inline-block;    /* Make links inline-block */
     margin-right: 15px;      /* Spacing between links */
     text-decoration: none;    /* Remove underline */
@@ -106,46 +111,45 @@ h1{
 
 /* Forside.css */
 
+
 .forside-container {
+  padding-left: 0;
   text-align: center;
   width: 100%;
   overflow-x: hidden;
-  padding-bottom: 80px; /* Ekstra plads til BottomNav */
+  padding-bottom: 80px;
 }
-  
-  .forside-container h1 {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-    justify-items: center;
-    width: 100%;
-  }
-  
-  .grid-item {
-    text-align: center;
-  }
-  
-  .image-placeholder {
-    padding: 0;
-    width: 150px;
-    height: 150px;
-    background-color: #e0e0e0;
-    border: 1px solid #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    color: #bbb;
-  }
-  
-  .grid-item p {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-  }
-  
+
+.forside-container h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  justify-items: center;
+  width: 100%;
+}
+
+.grid-item {
+  text-align: center;
+  padding: 0;
+}
+
+.image-placeholder {
+  width: 150px;
+  height: 150px;
+  object-fit: cover; /* Ensures the image fills the container without stretching */
+  border: 1px solid #ccc;
+  background-color: #e0e0e0; /* Placeholder background if the image doesn't load */
+  border-radius: 5px; /* Optional: rounded corners */
+}
+
+.grid-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
