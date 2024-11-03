@@ -45,34 +45,42 @@ function Forside() {
           <div className="grid-item">
             <img src="img/sækkevogn.webp" alt="Sækkevogn" className="image-placeholder" />
             <p>Sækkevogn</p>
+            <p>30 kr</p>
           </div>
           <div className="grid-item">
             <img src="/img/badminton.jpg" alt="Stige" className="image-placeholder" />
             <p>Stige</p>
+            <p>20 kr</p>
           </div>
           <div className="grid-item">
             <img src="img/elektrisk-høvl.webp" alt="Plæneklipper" className="image-placeholder" />
             <p>Elektrisk høvl</p>
+            <p>50 kr</p>
           </div>
           <div className="grid-item">
             <img src="path/to/boremaskine.jpg" alt="Boremaskine" className="image-placeholder" />
             <p>Boremaskine</p>
+            <p>30 kr</p>
           </div>
           <div className="grid-item">
             <img src="path/to/badminton_ketcher.jpg" alt="Badminton ketcher" className="image-placeholder" />
             <p>Badminton ketcher</p>
+            <p>20 kr</p>
           </div>
           <div className="grid-item">
             <img src="/img/lysterapi.webp" alt="Bog" className="image-placeholder" />
             <p>Lysterapi lampe</p>
+            <p>50 kr</p>
           </div>
           <div className="grid-item">
             <img src="img/strikkepinde.webp" alt="Strikkepinde sæt" className="image-placeholder" />
             <p>Strikkepinde sæt</p>
+            <p>40 kr</p>
           </div>
           <div className="grid-item">
             <img src="path/to/stole.jpg" alt="4 stole" className="image-placeholder" />
             <p>4 stole</p>
+            <p>30 kr</p>
           </div>
         </div>
       </div>
