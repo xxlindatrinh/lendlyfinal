@@ -1,12 +1,11 @@
-import '../css/Omprofil.css';
+import '../css/OmProfil.css';
 
-function Omprofil() {
+function OmProfil() {
     return (
         <>
-        <h1>idiot</h1>
         </>
     );
 }
 
 
-export default Omprofil;
+export default OmProfil;
