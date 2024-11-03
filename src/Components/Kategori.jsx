@@ -1,11 +1,14 @@
 import '../css/Kategori.css';
+import { useNavigate } from 'react-router-dom';
 
 function Kategori() {
+    const navigate = useNavigate();
+
     return (
         <>
         <header className="profil-header">
                 <div id='back-button'>
-                <button className="back-button">&lt; Tilbage</button>
+                <button className="back-button" onClick={() => navigate(-1)}>&lt; Tilbage</button>
                 </div>
                 <div>
                 <h1>Kategorier</h1>
