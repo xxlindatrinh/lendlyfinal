@@ -1,14 +1,16 @@
 import '../css/Profil.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 
 function Profil() {
+    const navigate = useNavigate();
     return (
         <>
         <div className="profil-container">
         <header className="profil-header">
-                <div id='back-button'>
-                <button className="back-button">&lt; Tilbage</button>
+        <div id='back-button'>
+                <button className="back-button" onClick={() => navigate(-1)}>&lt; Tilbage</button>
                 </div>
                 <div>
                 <h1>Profil</h1>
