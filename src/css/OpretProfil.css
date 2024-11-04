@@ -28,10 +28,11 @@ body {
   color: black;
   font-size: 24px;
   font-weight: 700;
+  padding: 0px;
 }
 
 .underline {
-  width: 40px;
+  width: 60px;
   height: 4px;
   background: #1f4307;
   border-radius: 9px;

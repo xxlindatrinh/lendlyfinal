@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom"; // Til navigation
+import { useNavigate } from "react-router-dom"; // For navigation
 import "../css/Onboarding.css";
 
 function Onboarding() {
   const [page, setPage] = useState(0); // 0 for terms, 1 for first onboarding page
-  const navigate = useNavigate(); // Bruges til navigation
+  const navigate = useNavigate(); // Used for navigation
 
   // Function to handle swiping or clicking to the next page
   const handleNextPage = () => {
@@ -15,7 +15,7 @@ function Onboarding() {
 
   // Function to handle closing onboarding
   const handleClose = () => {
-    navigate("/Forside"); // Går til forsiden
+    navigate("/Forside"); // Goes to the homepage
   };
 
   // Add touch event listeners for swipe detection
@@ -154,6 +154,15 @@ function Onboarding() {
               </p>
             </>
           )}
+          {/* Pagination Dots */}
+          <div className="pagination-dots">
+            {[1, 2, 3].map((dotPage) => (
+              <span
+                key={dotPage}
+                className={`dot ${page === dotPage ? "active" : ""}`}
+              ></span>
+            ))}
+          </div>
         </div>
       )}
     </div>
