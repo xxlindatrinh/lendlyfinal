@@ -1,0 +1,127 @@
+/* General form styling */
+.upload-form {
+    background-color: #ffffff; /* White background for clarity */
+    padding: 20px;
+    max-width: 400px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(217, 217, 217, 0.1); /* Subtle shadow for focus */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Styling for the image upload button */
+  .upload-image-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9; /* Updated to gray color to match the mockup */
+    color: #333; /* Dark text color for contrast */
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Make button full width to center content better */
+    height: 150px; /* Added height to ensure enough space for content */
+  }
+  
+  .upload-button-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Add space between icon and text */
+  }
+
+  .upload-button-icon {
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    width: 40px;
+  }
+
+  .upload-button-text {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .upload-image-button:hover {
+    background-color: #e0e0e0; /* Slightly lighter gray on hover */
+  }
+  
+  /* Input and textarea styling */
+  .upload-input, .upload-textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background-color: #d9d9d9; /* Gray color for input background */
+    color: #000; /* Black text color for input */
+    transition: border-color 0.3s ease;
+  }
+  
+  .upload-input:focus, .upload-textarea:focus {
+    outline: none;
+    border-color: #2f4f2f; /* Green border on focus for consistency */
+  }
+  
+  .upload-textarea {
+    height: 80px;
+    resize: none;
+  }
+  
+  /* Guidance text below certain inputs */
+  .upload-guidance {
+    font-size: 12px;
+    color: #777; /* Subtle text color */
+    margin-top: -5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Location section styling */
+  .upload-location {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .edit-location-button {
+    color: #2f4f2f; /* Green to match the main theme */
+    border: none;
+    background: none;
+    padding: 0;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .edit-location-button:hover {
+    color: #365c36; /* Lighter green on hover */
+  }
+  
+  /* Submit button styling */
+  .submit-button {
+    margin-top: 20px;
+    background-color: #2f4f2f; /* Matching dark green */
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #365c36; /* Lighter green on hover */
+  }

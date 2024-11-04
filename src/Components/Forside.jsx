@@ -1,91 +1,84 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/Forside.css";
 
+const items = [
+  { src: "img/projektor.webp", alt: "Projektor", name: "Projektor", price: "30 kr" },
+  { src: "img/sækkevogn.webp", alt: "Sækkevogn", name: "Sækkevogn", price: "30 kr" },
+  { src: "/img/badminton.jpg", alt: "Badminton ketcher", name: "Badminton ketcher", price: "20 kr" },
+  { src: "img/soundboks.webp", alt: "Soundboks", name: "Soundboks", price: "300 kr" },
+  { src: "img/trillebør.webp", alt: "Trillebør", name: "Trillebør", price: "30 kr" },
+  { src: "img/sav.webp", alt: "Geringsav", name: "Geringsav", price: "20 kr" },
+  { src: "/img/lysterapi.webp", alt: "Lysterapi lampe", name: "Lysterapi lampe", price: "50 kr", badge: "1-2 mdr." },
+  { src: "img/elektrisk-høvl.webp", alt: "Elektrisk høvl", name: "Elektrisk høvl", price: "50 kr" },
+  { src: "img/stole.webp", alt: "4 stole", name: "4 stole", price: "30 kr" },
+  { src: "img/strikkepinde.webp", alt: "Strikkepinde sæt", name: "Strikkepinde sæt", price: "40 kr" },
+];
+
+const HeartButton = ({ onClick, isLiked }) => (
+  <div className="heart-btn" onClick={onClick}>
+    <svg
+      className={`heart-icon ${isLiked ? "liked" : ""}`}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="20"
+      height="20"
+      fill="currentColor"
+    >
+      <path d="M12 21.758l-1.35-1.233C5.4 15.254 2 12.203 2 8.292 2 5.5 4.243 3.25 7.02 3.25c1.876 0 3.662 1.043 4.48 2.59a5.438 5.438 0 0 1 4.48-2.59C19.757 3.25 22 5.5 22 8.292c0 3.91-3.4 6.962-8.65 12.233L12 21.758z" />
+    </svg>
+  </div>
+);
+
+
 function Forside() {
+  const [likedItems, setLikedItems] = useState({});
+
+  const handleHeartClick = (index) => {
+    setLikedItems((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
+
   return (
     <main className="main-container">
       {/* Search Bar */}
       <div className="search-container">
-  <div className="search-bar">
-    <input type="text" placeholder="Hvad søger du?" />
-  </div>
-  <div className="lokation">
-    <img src="/ikoner/location.svg" alt="lokation" />
-  </div>
-</div>
-
-      
-      
-
-
-      {/* Scrollable Categories */}
-      <div className="categories-block">
-        <div className="scroll-category active">Ikoner</div>
-        <div className="scroll-category">Hytter</div>
-        <div className="scroll-category">Wow!</div>
-        <div className="scroll-category">Trætopshuse</div>
-        <div className="scroll-category">Professionelle værter</div>
-        <div className="scroll-category">Unikke hjem</div>
-        <div className="scroll-category">Historiske hjem</div>
+        <div className="search-bar">
+          <input type="text" placeholder="Hvad søger du?" />
+        </div>
+        <div className="lokation">
+          <img src="/ikoner/location.svg" alt="lokation" />
+        </div>
       </div>
 
-      {/* Forside Content */}
+      {/* Categories */}
+      <div className="categories-block">
+        <div className="scroll-category active">Hus og Have</div>
+        <div className="scroll-category">Værktøj</div>
+        <div className="scroll-category">Elektronik</div>
+        <div className="scroll-category">Tøj</div>
+        <div className="scroll-category">Hobby</div>
+      </div>
+
+      {/* Main Content */}
       <div className="forside-container">
         <h1>I nærheden af dig</h1>
         <div className="grid-container">
-          <div className="grid-item">
-            <img src="img/projektor.webp" alt="Projektor" className="image-placeholder" />
-            <p>Projektor</p>
-            <p>30 kr</p>
-          </div>
-          <div className="grid-item">
-            <img src="img/sækkevogn.webp" alt="Sækkevogn" className="image-placeholder" />
-            <p>Sækkevogn</p>
-            <p>30 kr</p>
-          </div>
-          <div className="grid-item">
-            <img src="/img/badminton.jpg" alt="Badminton ketcher" className="image-placeholder" />
-            <p>Badminton ketcher</p>
-            <p>20 kr</p>
-          </div>
-          <div className="grid-item">
-            <img src="img/soundboks.webp" alt="Soundboks" className="image-placeholder" />
-            <p>Soundboks</p>
-            <p>300 kr</p>
-          </div>
-          <div className="grid-item">
-            <img src="img/trillebør.webp" alt="Trillebør" className="image-placeholder" />
-            <p>Trillebør</p>
-            <p>30 kr</p>
-          </div>
-          <div className="grid-item">
-            <img src="img/sav.webp" alt="Geringsav" className="image-placeholder" />
-            <p>Geringsav</p>
-            <p>20 kr</p>
-          </div>
-          <div className="grid-item">
-            <div className="image-container">
-              <img src="/img/lysterapi.webp" alt="Lysterapi lampe" className="image-placeholder" />
-              <div className="badge">1-2 mdr.</div>
+          {items.map((item, index) => (
+            <div className="grid-item" key={index}>
+              <div className="image-container">
+                <img src={item.src} alt={item.alt} className="image-placeholder" />
+                <HeartButton
+                  onClick={() => handleHeartClick(index)}
+                  isLiked={likedItems[index]}
+                />
+                {item.badge && <div className="badge">{item.badge}</div>}
+              </div>
+              <p>{item.name}</p>
+              <p>{item.price}</p>
             </div>
-            <p>Lysterapi lampe</p>
-            <p>50 kr</p>
-          </div>
-          <div className="grid-item">
-            <img src="img/elektrisk-høvl.webp" alt="Elektrisk høvl" className="image-placeholder" />
-            <p>Elektrisk høvl</p>
-            <p>50 kr</p>
-          </div>
-          <div className="grid-item">
-            <img src="img/stole.webp" alt="4 stole" className="image-placeholder" />
-            <p>4 stole</p>
-            <p>30 kr</p>
-          </div>
-          <div className="grid-item">
-            <img src="img/strikkepinde.webp" alt="Strikkepinde sæt" className="image-placeholder" />
-            <p>Strikkepinde sæt</p>
-            <p>40 kr</p>
-          </div>
+          ))}
         </div>
       </div>
     </main>
@@ -93,3 +86,4 @@ function Forside() {
 }
 
 export default Forside;
+
