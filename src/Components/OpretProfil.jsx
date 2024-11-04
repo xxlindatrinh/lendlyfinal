@@ -1,8 +1,32 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../css/Opretprofil.css";
 
 const Opretprofil = () => {
   const [action, setAction] = useState("Opret dig");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
+  const handleSubmit = () => {
+    if (
+      (action === "Opret dig" && name && email && password) ||
+      (action === "Login" && email && password)
+    ) {
+      console.log(
+        "Navigating to:",
+        action === "Opret dig" ? "/Onboarding" : "/Forside"
+      );
+      if (action === "Opret dig") {
+        navigate("/Onboarding");
+      } else {
+        navigate("/Forside");
+      }
+    } else {
+      alert("Udfyld venligst alle felter");
+    }
+  };
 
   return (
     <div className="container">
@@ -16,17 +40,32 @@ const Opretprofil = () => {
         ) : (
           <div className="input">
             <img src="/ikoner/user.svg" alt="" />
-            <input type="text" placeholder="Navn" />
+            <input
+              type="text"
+              placeholder="Navn"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </div>
         )}
 
         <div className="input">
           <img src="/ikoner/email.svg" alt="" />
-          <input type="email" placeholder="Email" />
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
         </div>
         <div className="input">
           <img src="/ikoner/password.svg" alt="" />
-          <input type="password" placeholder="Adgangskode" />
+          <input
+            type="password"
+            placeholder="Adgangskode"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
         </div>
       </div>
 
@@ -43,6 +82,7 @@ const Opretprofil = () => {
           className={action === "Login" ? "submit gray" : "submit"}
           onClick={() => {
             setAction("Opret dig");
+            handleSubmit();
           }}
         >
           Opret dig
@@ -51,11 +91,19 @@ const Opretprofil = () => {
           className={action === "Opret dig" ? "submit gray" : "submit"}
           onClick={() => {
             setAction("Login");
+            if (action === "Login") {
+              
+              handleSubmit();
+            }
           }}
         >
           Login
         </div>
       </div>
+
+      {/* <div className="submit-button" onClick={handleSubmit}>
+        {action === "Opret dig" ? "Opret dig" : "Login"}
+      </div> */}
     </div>
   );
 };

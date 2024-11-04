@@ -141,3 +141,23 @@ body {
 .close-button:hover {
   color: #555; /* Juster hover-farve efter behov */
 }
+
+.pagination-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #333; /* Adjust this color for active dot */
+}

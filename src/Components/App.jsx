@@ -10,7 +10,7 @@ import Indbakke from "./Indbakke";
 import Onboarding from "./Onboarding";
 import Favoritter from "./Favoritter";
 import OmProfil from "./OmProfil";
-
+import Loading from "./Loadingscreen";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function Main() {
   const location = useLocation(); // Get the current location
 
   // Specify the routes where BottomNav should NOT appear
-  const noBottomNavRoutes = ["./OpretProfil"]; // Match exact route path
+  const noBottomNavRoutes = ["/OpretProfil", "/Onboarding", "/Loadingscreen"]; // Use actual route paths
 
   // Check if the current path is NOT in the noBottomNavRoutes array
   const showBottomNav = !noBottomNavRoutes.includes(location.pathname);
@@ -41,6 +41,7 @@ function Main() {
         <Route path="/Onboarding" element={<Onboarding />} />
         <Route path="/Favoritter" element={<Favoritter />} />
         <Route path="/OmProfil" element={<OmProfil />} />
+        <Route path="/Loadingscreen" element={<Loading />} />
       </Routes>
       {showBottomNav && <BottomNav />} {/* Conditionally render BottomNav */}
     </>
