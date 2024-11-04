@@ -5,9 +5,18 @@ function Forside() {
   return (
     <main className="main-container">
       {/* Search Bar */}
-      <div className="search-bar">
-        <input type="text" placeholder="Hvorhen?" />
-      </div>
+      <div className="search-container">
+  <div className="search-bar">
+    <input type="text" placeholder="Hvad søger du?" />
+  </div>
+  <div className="lokation">
+    <img src="/ikoner/location.svg" alt="lokation" />
+  </div>
+</div>
+
+      
+      
+
 
       {/* Scrollable Categories */}
       <div className="categories-block">
@@ -25,19 +34,24 @@ function Forside() {
         <h1>I nærheden af dig</h1>
         <div className="grid-container">
           <div className="grid-item">
+            <img src="img/projektor.webp" alt="Projektor" className="image-placeholder" />
+            <p>Projektor</p>
+            <p>30 kr</p>
+          </div>
+          <div className="grid-item">
             <img src="img/sækkevogn.webp" alt="Sækkevogn" className="image-placeholder" />
             <p>Sækkevogn</p>
             <p>30 kr</p>
           </div>
           <div className="grid-item">
-            <img src="/img/badminton.jpg" alt="Stige" className="image-placeholder" />
-            <p>Stige</p>
+            <img src="/img/badminton.jpg" alt="Badminton ketcher" className="image-placeholder" />
+            <p>Badminton ketcher</p>
             <p>20 kr</p>
           </div>
           <div className="grid-item">
-            <img src="img/strikkepinde.webp" alt="Strikkepinde sæt" className="image-placeholder" />
-            <p>Strikkepinde sæt</p>
-            <p>40 kr</p>
+            <img src="img/soundboks.webp" alt="Soundboks" className="image-placeholder" />
+            <p>Soundboks</p>
+            <p>300 kr</p>
           </div>
           <div className="grid-item">
             <img src="img/trillebør.webp" alt="Trillebør" className="image-placeholder" />
@@ -45,7 +59,7 @@ function Forside() {
             <p>30 kr</p>
           </div>
           <div className="grid-item">
-            <img src="img/sav.jpg" alt="Geringsav" className="image-placeholder" />
+            <img src="img/sav.webp" alt="Geringsav" className="image-placeholder" />
             <p>Geringsav</p>
             <p>20 kr</p>
           </div>
@@ -63,7 +77,7 @@ function Forside() {
             <p>50 kr</p>
           </div>
           <div className="grid-item">
-            <img src="img/stole.jpg" alt="4 stole" className="image-placeholder" />
+            <img src="img/stole.webp" alt="4 stole" className="image-placeholder" />
             <p>4 stole</p>
             <p>30 kr</p>
           </div>

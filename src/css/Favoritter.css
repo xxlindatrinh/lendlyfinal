@@ -1,0 +1,60 @@
+/* Basic reset */
+
+main {
+    padding-bottom: 4.4375rem;
+    padding-top: 1.25rem;
+  }
+  
+  body, html {
+    overflow-x: hidden;
+    margin: 0;
+  }
+  
+  /* Forside Content */
+  .favoritter-container {
+    text-align: center;
+    width: 100%;
+    padding: 0 8px;
+  }
+  
+  .favoritter-container h1 {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to new lines if needed */
+    gap: 8px; /* Space between items */
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  
+  .grid-item {
+    text-align: center;
+    padding: 0;
+  }
+  
+  .image-container {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+  }
+  
+  .image-placeholder {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+  }
+  
+  .grid-item p {
+    font-size: 16px;
+    color: #333;
+  }
+  

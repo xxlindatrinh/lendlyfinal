@@ -1,5 +1,5 @@
 import '../css/Kategori.css';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Kategori() {
     const navigate = useNavigate();
@@ -21,10 +21,10 @@ function Kategori() {
         </div>    
 
             <div className='mine-kategorier'>
-                <div className="kategori-item">
-                    <img src="/ikoner/hjerte_ikon.svg" alt="Gemte varer icon" />
-                    <span>Mine gemte varer</span>
-                </div>
+            <Link to="/favoritter" className="kategori-item">
+            <img src="/ikoner/hjerte_ikon.svg" alt="Gemte varer icon" />
+            <span>Mine favoritter</span>
+            </Link>
                 <div className="kategori-item">
                     <img src="/ikoner/gruppe_ikon.svg" alt="Grupper icon" />
                     <span>Mine grupper</span>
