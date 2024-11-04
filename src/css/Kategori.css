@@ -1,71 +1,73 @@
 /* Container Styling */
 body {
-    margin:0;
-    padding-bottom: 4.4375rem;
-    overflow-x: hidden;
-    background-color: #ffffff;
+  margin: 0;
+  padding-bottom: 4.4375rem;
+  overflow-x: hidden;
+  background-color: #ffffff;
 }
 
 .profil-header {
-    display: flex;
-    align-items: center; /* Centers items vertically on the same line */
-    justify-content: center; /* Centers the h1 horizontally */
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    position: relative; /* Allows absolute positioning for the button */
-    padding: 10px 0;
+  display: flex;
+  align-items: center; /* Centers items vertically on the same line */
+  justify-content: center; /* Centers the h1 horizontally */
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  position: relative; /* Allows absolute positioning for the button */
+  padding: 10px 0;
 }
 
 #back-button {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .back-button {
-    font-size: 16px;
-    background: none;
-    border: none;
-    position: absolute; /* Absolutely positioned to the left */
-    left: 20px; /* Adjust this value to set the distance from the left edge */
-    transform: translateY(0); /* Fine-tune vertical alignment, if needed */
+  font-size: 16px;
+  background: none;
+  border: none;
+  position: absolute; /* Absolutely positioned to the left */
+  left: 20px; /* Adjust this value to set the distance from the left edge */
+  transform: translateY(0); /* Fine-tune vertical alignment, if needed */
 }
-
 
 .mine-kategorier .kategori-item span,
 .populaer .kategori-item span,
 .alle-kategorier .kategori-item span {
-    font-size: 18px; /* Set the desired font size */
+  font-size: 18px; /* Set the desired font size */
 }
 
-.mine-kategorier, .populaer, .alle-kategorier {
-
-    margin: 0;
-    display: flex;
-    flex-direction: column;  /* Stack items vertically */
-    align-items: flex-start; /* Align items to the left */
+.mine-kategorier,
+.populaer,
+.alle-kategorier {
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the left */
 }
 
 /* Styling for each item */
 .kategori-item {
-    display: flex;
-    align-items: center; /* Center items vertically */
-    justify-content: left; /* Center items horizontally */
-    gap: 10px; /* Space between icon and text */
-    padding: 10px;
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: left; /* Center items horizontally */
+  gap: 10px; /* Space between icon and text */
+  padding: 10px;
+  color: black;
 }
 
 /* Icon Styling */
 .kategori-item img {
-    width: 40px; /* Adjust based on desired icon size */
-    height: 40px;
-    margin-right: 20px;
-    background-color: #e0e0e0; /* Background for rounded icons */
-    border-radius: 50%;
+  width: 40px; /* Adjust based on desired icon size */
+  height: 40px;
+  margin-right: 20px;
+  background-color: #e0e0e0; /* Background for rounded icons */
+  border-radius: 50%;
 }
 
 /* Headings */
-.populaer h2, .alle-kategorier h2 {
-    font-weight: bold;
-    margin-bottom: 10px;
+.populaer h2,
+.alle-kategorier h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
