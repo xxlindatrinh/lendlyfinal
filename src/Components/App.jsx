@@ -10,7 +10,6 @@ import Indbakke from "./Indbakke";
 import Onboarding from "./Onboarding";
 import Favoritter from "./Favoritter";
 import OmProfil from "./OmProfil";
-import Opslag from "./Opslag";
 import Loading from "./Loadingscreen";
 
 function App() {
@@ -42,7 +41,6 @@ function Main() {
         <Route path="/Onboarding" element={<Onboarding />} />
         <Route path="/Favoritter" element={<Favoritter />} />
         <Route path="/OmProfil" element={<OmProfil />} />
-        <Route path="/Opslag" element={<Opslag />} />
         <Route path="/Loadingscreen" element={<Loading />} />
       </Routes>
       {showBottomNav && <BottomNav />} {/* Conditionally render BottomNav */}
