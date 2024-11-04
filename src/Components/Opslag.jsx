@@ -6,6 +6,4 @@ function Opslag() {
         </>
     );
 }
-
-
 export default Opslag;
