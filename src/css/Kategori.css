@@ -31,9 +31,6 @@ body {
     transform: translateY(0); /* Fine-tune vertical alignment, if needed */
 }
 
-div {
-    padding-left: 20px;
-}
 
 .mine-kategorier .kategori-item span,
 .populaer .kategori-item span,

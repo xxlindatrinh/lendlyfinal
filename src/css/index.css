@@ -3,7 +3,6 @@
   line-height: 1.5;
   font-weight: 400;
 
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -24,14 +23,17 @@ a:hover {
 }
 
 /* Global Reset for Body and HTML */
-html, body, * {
+html,
+body,
+* {
   margin: 0; /* Remove default margins */
   padding: 0; /* Remove default paddings */
   box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 /* Ensure body covers full height and starts at the top */
-html, body {
+html,
+body {
   height: 100%; /* Ensure full height */
   min-height: 100vh; /* Full height for body */
   display: flex; /* Use flexbox for layout */
@@ -41,16 +43,9 @@ html, body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
 p {
   font-size: 1.125rem;
 }
-
-
 
 @media (prefers-color-scheme: light) {
   :root {
