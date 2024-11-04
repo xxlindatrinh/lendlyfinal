@@ -6,7 +6,7 @@ body {
   background-color: #ffffff;
 }
 
-.profil-header {
+.kategori-header {
   display: flex;
   align-items: center; /* Centers items vertically on the same line */
   justify-content: center; /* Centers the h1 horizontally */
