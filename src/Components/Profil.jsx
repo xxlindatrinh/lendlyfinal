@@ -31,8 +31,8 @@ function Profil() {
 
             <div className="profile-options">
                 <button className="option-button">Din guide til Lendly</button>
-                <Link to="/Favoritter" className="option-button">
-                    Mine favoritter
+                <Link to="/Opslag" className="option-button">
+                    Mine opslag
                 </Link>
 
                 <button className="option-button">Mine lejeaftaler</button>

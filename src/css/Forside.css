@@ -1,14 +1,13 @@
 /* Basic reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+main {
+  padding-bottom: 4.4375rem;
+  padding-top: 1.25rem;
 }
 
 body, html {
   overflow-x: hidden;
   margin: 0;
-  padding: 0;
 }
 
 /* Main container to hold everything */
@@ -20,18 +19,28 @@ body, html {
   width: 100%;
 }
 
+/* Search bar and location container */
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  gap: 10px; /* Space between search bar and location */
+}
+
 /* Search Bar styling */
 .search-bar {
+  flex: 8; /* Makes search bar take up 80% of the width */
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  padding: 8px 0;
+  padding: 5px;
 }
 
 .search-bar input {
   width: 100%;
-  max-width: 500px;
+  max-width: 100%;
   padding: 12px;
   border-radius: 24px;
   border: 1px solid #e0e0e0;
@@ -44,6 +53,22 @@ body, html {
 .search-bar input::placeholder {
   color: #b0b0bd;
 }
+
+/* Lokation (image) styling */
+.lokation {
+  flex: 2; /* Makes lokation take up 20% of the width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.lokation img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
 
 /* Scrollable Categories */
 /* Scrollable Categories */
@@ -86,7 +111,7 @@ body, html {
 .forside-container {
   text-align: center;
   width: 100%;
-  padding: 0 16px;
+  padding: 0 8px;
 }
 
 .forside-container h1 {
@@ -98,13 +123,14 @@ body, html {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
+  gap: 3px;
   justify-items: center;
   width: 100%;
 }
 
 .grid-item {
   text-align: center;
+  padding: 0;
 }
 
 .image-container {
@@ -113,8 +139,8 @@ body, html {
 }
 
 .image-placeholder {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border: 1px solid #ccc;
   background-color: #e0e0e0;
