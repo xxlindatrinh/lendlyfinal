@@ -51,7 +51,7 @@ html, body {
 }
 
 /* Profile info styling */
-.profile-info {
+.profile-content {
     background-color: #8a9a5b; /* Greenish background to match the mockup */
     padding: 20px;
     margin-bottom: 20px;
@@ -96,23 +96,22 @@ html, body {
     color: #000; /* Set text color to black */
 }
 
-.profile-info-content {
+.profile-content-content {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Increase the gap for better spacing */
+    gap: 15px; /* Increase the gap for better spacing */
 }
 
-.profile-info-content p {
+.profile-content-content p {
     display: flex;
     align-items: center;
-    gap: 20px; /* Increase the gap between icon and text */
+    gap: 15px; /* Space between the icon and text */
     margin: 0;
     font-size: 16px;
     color: #000; /* Set text color to black */
-    line-height: 1; /* Ensure line height doesn’t push text down */
 }
 
-.profile-info-content p img {
+.profile-content-content p img {
     flex-shrink: 0;
     width: 70px; /* Set icon size to 70px */
     height: 70px; /* Set icon size to 70px */
@@ -204,18 +203,8 @@ html, body {
     justify-content: center;
 }
 
-/* Specific styling for the imported icons in profile info */
-.location-icon,
-.timestamp-icon,
-.rating-icon {
-    width: 70px; /* Set size of the icons to 70px */
-    height: 70px; /* Set size of the icons to 70px */
-    margin-right: 10px;
-    display: inline-block;
-}
-
 /* Aligning content properly within profile-info to match the mockup */
-.profile-info {
+.profile-content {
     align-items: flex-start;
     width: 100vw; /* Ensure the green box fills the whole page width */
     padding: 20px;
@@ -236,18 +225,18 @@ html, body {
 }
 
 /* Aligning icons and text horizontally */
-.profile-info-content p {
+.profile-content-content p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px; /* Ensure space between the icon and text is sufficient */
+    gap: 15px; /* Ensure space between the icon and text is sufficient */
     color: #000; /* Ensure text is black */
     line-height: 1; /* Ensure line height doesn’t push text down */
 }
 
-.profile-info-content p img {
+.profile-content-content p img {
     flex-shrink: 0;
-    width: 70px; /* Set icon size to 70px */
-    height: 70px; /* Set icon size to 70px */
+    width: 70px !important; /* Set icon size to 70px with importance */
+    height: 70px !important; /* Set icon size to 70px with importance */
     align-self: center; /* Center the image */
 }
