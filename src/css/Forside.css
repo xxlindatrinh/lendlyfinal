@@ -1,16 +1,16 @@
-/* Basic reset */
-
+/* Basic Reset */
 main {
   padding-bottom: 4.4375rem;
   padding-top: 1.25rem;
 }
 
-body, html {
+body,
+html {
   overflow-x: hidden;
   margin: 0;
 }
 
-/* Main container to hold everything */
+/* Main Container */
 .main-container {
   display: flex;
   flex-direction: column;
@@ -19,19 +19,18 @@ body, html {
   width: 100%;
 }
 
-/* Search bar and location container */
+/* Search Bar and Location Container */
 .search-container {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 8px;
+  padding: 6px;
   box-sizing: border-box;
   gap: 10px; /* Space between search bar and location */
 }
 
-/* Search Bar styling */
 .search-bar {
-  flex: 8; /* Makes search bar take up 80% of the width */
+  flex: 8;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,7 +39,6 @@ body, html {
 
 .search-bar input {
   width: 100%;
-  max-width: 100%;
   padding: 12px;
   border-radius: 24px;
   border: 1px solid #e0e0e0;
@@ -54,13 +52,11 @@ body, html {
   color: #b0b0bd;
 }
 
-/* Lokation (image) styling */
 .lokation {
-  flex: 2; /* Makes lokation take up 20% of the width */
+  flex: 2;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
 }
 
 .lokation img {
@@ -69,20 +65,18 @@ body, html {
   object-fit: cover;
 }
 
-
-/* Scrollable Categories */
 /* Scrollable Categories */
 .categories-block {
   display: flex;
   overflow-x: auto;
   white-space: nowrap;
-  padding: 8px 0;
+  padding: 8px 8px;
   scrollbar-width: thin;
   width: 100%;
 }
 
 .categories-block::-webkit-scrollbar {
-  height: 8px; /* Visible scrollbar for horizontal scrolling */
+  height: 8px;
 }
 
 .categories-block::-webkit-scrollbar-thumb {
@@ -90,22 +84,18 @@ body, html {
   border-radius: 10px;
 }
 
-/* Each Category Item */
 .scroll-category {
   color: #646080;
   background-color: #e9e9e9;
   padding: 6px 14px;
   border-radius: 20px;
-  display: inline-flex; /* Ensures horizontal stacking */
-  align-items: center;
   margin-right: 10px;
   border: 1px solid #b0b0bd;
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-  flex-shrink: 0; /* Prevents shrinking when scrolling */
+  flex-shrink: 0;
 }
-
 
 /* Forside Content */
 .forside-container {
@@ -120,17 +110,15 @@ body, html {
 }
 
 .grid-container {
-  padding: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3px;
+  gap: 10px;
   justify-items: center;
   width: 100%;
 }
 
 .grid-item {
   text-align: center;
-  padding: 0;
 }
 
 .image-container {
@@ -152,15 +140,35 @@ body, html {
   color: #333;
 }
 
+/* Badge Styling */
 .badge {
   position: absolute;
   top: 8px;
   right: 8px;
-  background-color: rgba(255, 0, 0, 0.8);
+  background-color: rgba(31, 67, 7, 0.3);
   color: white;
-  padding: 4px 8px;
+  padding: 2px 4px;
   border-radius: 12px;
   font-size: 0.8em;
   font-weight: bold;
-  white-space: nowrap;
 }
+
+/* Heart Button Styling */
+.heart-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.heart-icon {
+  font-size: 24px;
+  color: rgba(128, 128, 128, 0.5); /* Semi-transparent gray */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.heart-icon.liked {
+  color: #ff4d4d; /* Softer, more pleasant red */
+  transform: scale(1.2); /* Slight pop effect */
+}
+
