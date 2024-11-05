@@ -1,11 +1,34 @@
+// Linda
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../css/Favoritter.css";
 
 const items = [
-  { src: "img/sækkevogn.webp", alt: "Sækkevogn", name: "Sækkevogn", price: "30 kr" },
-  { src: "/img/badminton.jpg", alt: "Badminton ketcher", name: "Badminton ketcher", price: "20 kr" },
-  { src: "img/soundboks.webp", alt: "Soundboks", name: "Soundboks", price: "300 kr" },
-  { src: "/img/lysterapi.webp", alt: "Lysterapi lampe", name: "Lysterapi lampe", price: "50 kr", badge: "1-2 mdr." },
+  {
+    src: "img/sækkevogn.webp",
+    alt: "Sækkevogn",
+    name: "Sækkevogn",
+    price: "30 kr",
+  },
+  {
+    src: "/img/badminton.jpg",
+    alt: "Badminton ketcher",
+    name: "Badminton ketcher",
+    price: "20 kr",
+  },
+  {
+    src: "img/soundboks.webp",
+    alt: "Soundboks",
+    name: "Soundboks",
+    price: "300 kr",
+  },
+  {
+    src: "/img/lysterapi.webp",
+    alt: "Lysterapi lampe",
+    name: "Lysterapi lampe",
+    price: "50 kr",
+    badge: "1-2 mdr.",
+  },
 ];
 
 const HeartButton = ({ onClick, isLiked }) => (
@@ -25,6 +48,7 @@ const HeartButton = ({ onClick, isLiked }) => (
 
 function Favoritter() {
   const [likedItems, setLikedItems] = useState({});
+  const navigate = useNavigate(); // Initialize navigate
 
   const handleHeartClick = (index) => {
     setLikedItems((prev) => ({
@@ -35,12 +59,28 @@ function Favoritter() {
 
   return (
     <div className="favoritter-container">
+      <header className="favorit-header">
+        <div id="back-button">
+          <button className="back-button" onClick={() => navigate(-1)}>
+            &lt; Tilbage
+          </button>
+        </div>
+        <div>
+          <h1>Favoritter</h1>
+        </div>
+        <div></div>
+      </header>
+
       <h1>Mine favoritter</h1>
       <div className="grid-container">
         {items.map((item, index) => (
           <div className="grid-item" key={index}>
             <div className="image-container">
-              <img src={item.src} alt={item.alt} className="image-placeholder" />
+              <img
+                src={item.src}
+                alt={item.alt}
+                className="image-placeholder"
+              />
               <HeartButton
                 onClick={() => handleHeartClick(index)}
                 isLiked={likedItems[index]}

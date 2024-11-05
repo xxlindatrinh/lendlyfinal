@@ -1,15 +1,16 @@
 /* Basic reset */
 
 main {
-    padding-bottom: 4.4375rem;
-    padding-top: 1.25rem;
-  }
-  
-  body, html {
-    overflow-x: hidden;
-    margin: 0;
-  }
-  /* Forside Content */
+  padding-bottom: 4.4375rem;
+  padding-top: 1.25rem;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  margin: 0;
+}
+/* Forside Content */
 .favoritter-container {
   text-align: center;
   width: 100%;
@@ -27,18 +28,18 @@ main {
   gap: 10px;
   justify-items: center;
   width: 100%;
-  padding:0;
+  padding: 0;
 }
 
 .grid-item {
   text-align: center;
-  padding:0;
+  padding: 0;
 }
 
 .image-container {
   position: relative;
   display: inline-block;
-  padding:0;
+  padding: 0;
 }
 
 .image-placeholder {
@@ -83,7 +84,32 @@ main {
 }
 
 .heart-icon.liked {
-  color: #ff4d4d; /* Softer, more pleasant red */
+  color: #a53535; /* Softer, more pleasant red */
   transform: scale(1.2); /* Slight pop effect */
 }
 
+.favorit-header {
+  display: flex;
+  align-items: center; /* Centers items vertically on the same line */
+  justify-content: center; /* Centers the h1 horizontally */
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  position: relative; /* Allows absolute positioning for the button */
+  padding: 10px 0;
+  color: black;
+}
+
+#back-button {
+  padding-bottom: 20px;
+}
+
+.back-button {
+  font-size: 16px;
+  background: none;
+  border: none;
+  position: absolute; /* Absolutely positioned to the left */
+  left: 20px; /* Adjust this value to set the distance from the left edge */
+  transform: translateY(0); /* Fine-tune vertical alignment, if needed */
+}

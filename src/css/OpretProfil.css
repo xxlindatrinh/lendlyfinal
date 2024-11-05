@@ -2,15 +2,15 @@ html,
 body {
   height: 100%;
   margin: 0;
-  overflow: hidden; /* Prevents scrolling */
+  overflow: hidden; 
 }
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Full viewport height */
-  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport højde */
+  width: 100vw; /* Full viewport bredde */
   background-color: #fff;
   padding: 20px;
   box-sizing: border-box;

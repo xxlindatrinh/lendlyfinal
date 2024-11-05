@@ -1,24 +1,26 @@
+// Camilla
+
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom"; // For navigation
 import "../css/Onboarding.css";
 
 function Onboarding() {
-  const [page, setPage] = useState(0); // 0 for terms, 1 for first onboarding page
+  const [page, setPage] = useState(0); // 0 for betingelser, 1 for første onboarding side
   const navigate = useNavigate(); // Used for navigation
 
-  // Function to handle swiping or clicking to the next page
+  // Funktion til at styre klik eller swipe til næste slide
   const handleNextPage = () => {
     if (page < 3) {
       setPage(page + 1);
     }
   };
 
-  // Function to handle closing onboarding
+  // Funktion til at lukke onboarding
   const handleClose = () => {
-    navigate("/Forside"); // Goes to the homepage
+    navigate("/"); // Navigerer til forside
   };
 
-  // Add touch event listeners for swipe detection
+  // Touch event listeners for at kunne swipe mellem onboarding sider
   useEffect(() => {
     const handleTouchStart = (e) => {
       const touchStartX = e.touches[0].clientX;
@@ -26,13 +28,13 @@ function Onboarding() {
       const handleTouchMove = (e) => {
         const touchEndX = e.touches[0].clientX;
 
-        // Detect swipe right to go back
+        //  Swipe højre for at gå tilbage
         if (touchEndX - touchStartX > 50) {
           setPage((prevPage) => (prevPage > 0 ? prevPage - 1 : prevPage));
           document.removeEventListener("touchmove", handleTouchMove);
         }
 
-        // Detect swipe left to go forward
+        // Swipe venstre for at gå frem
         if (touchStartX - touchEndX > 50) {
           handleNextPage();
           document.removeEventListener("touchmove", handleTouchMove);
@@ -49,9 +51,9 @@ function Onboarding() {
     };
   }, [page]);
 
-  // Function to handle accept button
+  // Accepter knap navigerer til onboarding
   const handleAccept = () => {
-    setPage(1); // Go to the first onboarding page
+    setPage(1); // Går til første onboarding side
   };
 
   return (
@@ -100,7 +102,7 @@ function Onboarding() {
           <button className="close-button" onClick={handleClose}>
             ✕
           </button>{" "}
-          {/* Close button */}
+          {/* Luk knap */}
           {page === 1 && (
             <>
               <h2>Vælg lokation</h2>
@@ -154,7 +156,7 @@ function Onboarding() {
               </p>
             </>
           )}
-          {/* Pagination Dots */}
+          {/* Onboarding prikker, for at se hvor langt man er */}
           <div className="pagination-dots">
             {[1, 2, 3].map((dotPage) => (
               <span

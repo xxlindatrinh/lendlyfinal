@@ -1,3 +1,4 @@
+// Camilla
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/Opretprofil.css";
@@ -92,7 +93,6 @@ const Opretprofil = () => {
           onClick={() => {
             setAction("Login");
             if (action === "Login") {
-              
               handleSubmit();
             }
           }}
@@ -101,9 +101,7 @@ const Opretprofil = () => {
         </div>
       </div>
 
-      {/* <div className="submit-button" onClick={handleSubmit}>
-        {action === "Opret dig" ? "Opret dig" : "Login"}
-      </div> */}
+      {}
     </div>
   );
 };

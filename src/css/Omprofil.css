@@ -1,179 +1,174 @@
 /* Omprofil.css */
 
 .omprofil {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #000;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000;
 }
 
 /* Profile header styling */
 .profile-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    padding-top: 30px;
-    position: relative; /* Ensure children are positioned relative to header */
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  position: relative; /* Ensure children are positioned relative to header */
+  width: 100%;
 }
-
 
 /* Profile title styling */
 .profile-title {
-    margin-top: 10px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #000;
-    padding-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  padding-top: 10px;
 }
 
 .profile-tabs {
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
-    font-size: 18px;
-    justify-content: center;
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  font-size: 18px;
+  justify-content: center;
 }
 
 .tab {
-    cursor: pointer;
-    color: #777;
-    padding-bottom: 5px;
+  cursor: pointer;
+  color: #777;
+  padding-bottom: 5px;
 }
 
 .tab.active {
-    font-weight: bold;
-    color: #000;
-    border-bottom: 2px solid #2f4f2f;
+  font-weight: bold;
+  color: #000;
+  border-bottom: 2px solid #2f4f2f;
 }
 
 /* Profile section styling */
 .profile-section {
-    background-color: #8a9a5b;
-    padding: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 5px;
-    margin-left: 0;
-    margin-right: 0;
+  background-color: rgba(31, 67, 7, 0.6);
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .profile-section.full-width {
-    width: calc(100% + 40px);
-    margin-left: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .profile-top {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.profile-avatar {
-    width: 70px;
-    height: 70px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin-right: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 .profile-details h2 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: bold;
-    color: #000;
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin-left: 15px;
 }
 
 /* Profile info items styling */
 .profile-section-content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .profile-info-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 16px;
-    color: #000;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #000;
 }
 
 .profile-info-item img {
-    width: 24px;
-    height: 24px;
+  width: 25px;
+  height: 25px;
+  padding-bottom: 5px;
 }
 
 /* Profile listings styling */
 .profile-listings {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .profile-listings h2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
 }
 
 .listing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    padding: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 0 30px;
 }
 
 .listing-item {
-    border: 1px solid #ddd;
-    overflow: hidden;
-    background-color: #fff;
-    position: relative;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  overflow: hidden;
+  background-color: #fff;
+  position: relative;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .listing-image img {
-    width: 100%;
-    max-height: 180px;
-    object-fit: cover;
-    border-radius: 5px;
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .listing-status {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    background-color: #2f4f2f;
-    color: #fff;
-    padding: 2px 8px;
-    font-size: 12px;
-    border-radius: 5px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: #2f4f2f;
+  color: #fff;
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 5px;
 }
 
 .listing-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
 }
 
 .listing-info p {
-    margin: 0;
-    font-size: 16px;
-    font-weight: normal;
-    color: #000;
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  color: #000;
 }
 
 .edit-icon-placeholder {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-color: #333;
-    border-radius: 3px;
-    cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #333;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.profile-avatar img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
 }

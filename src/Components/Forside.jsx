@@ -1,17 +1,61 @@
+// Linda
 import React, { useState } from "react";
 import "../css/Forside.css";
 
 const items = [
-  { src: "img/projektor.webp", alt: "Projektor", name: "Projektor", price: "75 kr" },
-  { src: "img/sækkevogn.webp", alt: "Sækkevogn", name: "Sækkevogn", price: "30 kr" },
-  { src: "/img/badminton.jpg", alt: "Badminton ketcher", name: "Badminton ketcher", price: "25 kr" },
-  { src: "img/soundboks.webp", alt: "Soundboks", name: "Soundboks", price: "400 kr", badge: "3 d." },
-  { src: "img/trillebør.webp", alt: "Trillebør", name: "Trillebør", price: "30 kr" },
+  {
+    src: "img/projektor.webp",
+    alt: "Projektor",
+    name: "Projektor",
+    price: "75 kr",
+  },
+  {
+    src: "img/sækkevogn.webp",
+    alt: "Sækkevogn",
+    name: "Sækkevogn",
+    price: "30 kr",
+  },
+  {
+    src: "/img/badminton.jpg",
+    alt: "Badminton ketcher",
+    name: "Badminton ketcher",
+    price: "25 kr",
+  },
+  {
+    src: "img/soundboks.webp",
+    alt: "Soundboks",
+    name: "Soundboks",
+    price: "400 kr",
+    badge: "3 d.",
+  },
+  {
+    src: "img/trillebør.webp",
+    alt: "Trillebør",
+    name: "Trillebør",
+    price: "30 kr",
+  },
   { src: "img/sav.webp", alt: "Geringsav", name: "Geringsav", price: "20 kr" },
-  { src: "/img/lysterapi.webp", alt: "Lysterapi lampe", name: "Lysterapi lampe", price: "55 kr", badge: "1 mdr." },
-  { src: "img/elektrisk-høvl.webp", alt: "Elektrisk høvl", name: "Elektrisk høvl", price: "50 kr" },
+  {
+    src: "/img/lysterapi.webp",
+    alt: "Lysterapi lampe",
+    name: "Lysterapi lampe",
+    price: "55 kr",
+    badge: "1 mdr.",
+  },
+  {
+    src: "img/elektrisk-høvl.webp",
+    alt: "Elektrisk høvl",
+    name: "Elektrisk høvl",
+    price: "50 kr",
+  },
   { src: "img/stole.webp", alt: "4 stole", name: "4 stole", price: "30 kr" },
-  { src: "img/strikkepinde.webp", alt: "Strikkepinde sæt", name: "Strikkepinde sæt", price: "35 kr", badge: "1 uge" },
+  {
+    src: "img/strikkepinde.webp",
+    alt: "Strikkepinde sæt",
+    name: "Strikkepinde sæt",
+    price: "35 kr",
+    badge: "1 uge",
+  },
 ];
 
 const HeartButton = ({ onClick, isLiked }) => (
@@ -28,7 +72,6 @@ const HeartButton = ({ onClick, isLiked }) => (
     </svg>
   </div>
 );
-
 
 function Forside() {
   const [likedItems, setLikedItems] = useState({});
@@ -68,7 +111,11 @@ function Forside() {
           {items.map((item, index) => (
             <div className="grid-item" key={index}>
               <div className="image-container">
-                <img src={item.src} alt={item.alt} className="image-placeholder" />
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  className="image-placeholder"
+                />
                 <HeartButton
                   onClick={() => handleHeartClick(index)}
                   isLiked={likedItems[index]}
@@ -86,4 +133,3 @@ function Forside() {
 }
 
 export default Forside;
-

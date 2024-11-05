@@ -11,8 +11,8 @@
 
 .logo {
   width: 80vw;
-  max-width: 500px; /* Ensure it doesn’t exceed the container width */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 500px; 
+  height: auto; 
   animation: bounce 1s infinite; /* Tilføjer en hoppende animation */
 }
 

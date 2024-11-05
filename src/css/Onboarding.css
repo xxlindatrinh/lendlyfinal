@@ -1,4 +1,4 @@
-/* Nulstil margin og padding for at fjerne luft omkring containeren */
+/* Nulstiller margin og padding for at fjerne luft omkring containeren */
 html,
 body {
   margin: 0;
@@ -18,7 +18,7 @@ body {
   background-color: #ffffff;
   box-sizing: border-box;
   padding: 0;
-  text-align: center; /* Tilføj dette for at centrere tekst */
+  text-align: center; 
 }
 
 .terms-container {
@@ -83,8 +83,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-left: 20px; /* Juster efter behov */
-  padding-right: 20px; /* Juster efter behov */
+  padding-left: 20px; 
+  padding-right: 20px; 
   box-sizing: border-box; /* Sørger for, at padding ikke ændrer bredden */
   background-color: #ffffff;
 }
@@ -94,14 +94,14 @@ body {
   max-width: 300px;
   height: auto;
   border-radius: 12px;
-  margin: 0 auto; /* Sørger for at billedet er centreret */
+  margin: 0 auto; 
   object-fit: cover;
 }
 
 .image-slide h2 {
   font-size: 1.5rem;
   color: #000000;
-  margin-bottom: 10px; /* Space between heading and image */
+  margin-bottom: 10px; 
 }
 
 .image-slide p {
@@ -110,21 +110,21 @@ body {
 }
 
 .onboarding-image-1 {
-  width: 100%; /* Juster bredde, hvis nødvendigt */
-  max-width: 300px; /* Juster maksimal bredde for billede 1 */
-  height: auto; /* Behold aspektforholdet */
+  width: 100%; 
+  max-width: 300px; 
+  height: auto; 
 }
 
 .onboarding-image-2 {
-  width: 100%; /* Juster bredde, hvis nødvendigt */
-  max-width: 600px; /* Juster maksimal bredde for billede 2 */
-  height: auto; /* Behold aspektforholdet */
+  width: 100%; 
+  max-width: 600px; 
+  height: auto; 
 }
 
 .onboarding-image-3 {
-  width: 100%; /* Juster bredde, hvis nødvendigt */
-  max-width: 600px; /* Juster maksimal bredde for billede 2 */
-  height: auto; /* Behold aspektforholdet */
+  width: 100%; 
+  max-width: 600px; 
+  height: auto; 
 }
 
 .close-button {
@@ -135,11 +135,11 @@ body {
   border: none;
   font-size: 24px;
   cursor: pointer;
-  color: #333; /* Juster farve efter behov */
+  color: #333; 
 }
 
 .close-button:hover {
-  color: #555; /* Juster hover-farve efter behov */
+  color: #555; 
 }
 
 .pagination-dots {
@@ -159,5 +159,5 @@ body {
 }
 
 .dot.active {
-  background-color: #333; /* Adjust this color for active dot */
+  background-color: #333; 
 }

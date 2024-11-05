@@ -33,9 +33,9 @@ body {
   background: none;
   color: black;
   border: none;
-  position: absolute; /* Absolutely positioned to the left */
-  left: 20px; /* Adjust this value to set the distance from the left edge */
-  transform: translateY(0); /* Fine-tune vertical alignment, if needed */
+  position: absolute; 
+  left: 20px; 
+  transform: translateY(0); 
 }
 
 .profile-info {
@@ -47,25 +47,26 @@ body {
 }
 
 .profile-picture img {
-  width: 70px; /* Justér størrelsen her efter behov */
-  height: 70px; /* Justér størrelsen her efter behov */
+  width: 70px; 
+  height: 70px; 
 }
 
 .profile-name {
   display: flex;
   flex-direction: column; /* Stacks the p and span vertically */
-  text-align: left; /* Ensures text is aligned to the left */
+  text-align: left; 
+  margin-top: 10px;
 }
 
 .profile-name p {
   margin: 0;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: bold;
 }
 
 .profile-name span {
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .profile-options,
@@ -93,11 +94,11 @@ body {
 
 .option-button {
   display: flex; /* Gør knapperne til flex-containere */
-  align-items: center; /* Centrerer indholdet vertikalt */
+  align-items: center; 
 }
 
 .option-icon {
-  width: 35px; /* Juster størrelsen her */
-  height: 35px; /* Juster størrelsen her */
+  width: 35px; 
+  height: 35px; 
   margin-right: 10px; /* Tilføjer afstand mellem ikonet og teksten */
 }

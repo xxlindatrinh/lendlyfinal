@@ -103,7 +103,7 @@ html {
 }
 
 .forside-container h1 {
-  font-size: 20px;
+  font-size: 16px;
   margin: 20px 0;
 }
 
@@ -166,7 +166,6 @@ html {
 }
 
 .heart-icon.liked {
-  color: #ff4d4d; /* Softer, more pleasant red */
+  color: #a53535; /* Softer, more pleasant red */
   transform: scale(1.2); /* Slight pop effect */
 }
-

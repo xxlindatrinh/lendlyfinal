@@ -45,7 +45,6 @@ body {
   display: flex;
   flex-direction: column; /* Stack items vertically */
   align-items: flex-start; /* Align items to the left */
-  /* background-color: rgba(31, 67, 7, 0.3); */
   border-bottom: 1px solid #ffffff;
 }
 

@@ -1,3 +1,4 @@
+// Linda & Camilla
 import "../css/Kategori.css";
 import { Link, useNavigate } from "react-router-dom";
 

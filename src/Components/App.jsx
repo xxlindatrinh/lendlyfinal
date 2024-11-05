@@ -1,4 +1,11 @@
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import {
+  BrowserRouter,
+  Route,
+  Routes,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
+import { useEffect, useState } from "react"; 
 import "../css/App.css";
 import Forside from "./Forside";
 import Kategori from "./Kategori";
@@ -21,12 +28,20 @@ function App() {
 }
 
 function Main() {
-  const location = useLocation(); // Get the current location
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [hasLoaded, setHasLoaded] = useState(false); // Track if the loading screen has been shown
 
-  // Specify the routes where BottomNav should NOT appear
-  const noBottomNavRoutes = ["/OpretProfil", "/Onboarding", "/Loadingscreen"]; // Use actual route paths
+  // Show loading screen on first load
+  useEffect(() => {
+    if (!hasLoaded) {
+      setHasLoaded(true); // Set to true so loading screen only shows once
+      navigate("/Loadingscreen"); // Redirect to loading screen on first load
+    }
+  }, [hasLoaded, navigate]);
 
-  // Check if the current path is NOT in the noBottomNavRoutes array
+  // Routes hvor Bottomnav ikke skal vises
+  const noBottomNavRoutes = ["/OpretProfil", "/Onboarding", "/Loadingscreen"];
   const showBottomNav = !noBottomNavRoutes.includes(location.pathname);
 
   return (
@@ -43,7 +58,7 @@ function Main() {
         <Route path="/OmProfil" element={<OmProfil />} />
         <Route path="/Loadingscreen" element={<Loading />} />
       </Routes>
-      {showBottomNav && <BottomNav />} {/* Conditionally render BottomNav */}
+      {showBottomNav && <BottomNav />}
     </>
   );
 }

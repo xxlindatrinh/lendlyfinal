@@ -1,3 +1,4 @@
+// Camilla & Linda
 import "../css/Profil.css";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -16,18 +17,18 @@ function Profil() {
         </div>
       </header>
 
-      {/* Link to profile details page */}
+      {/* Linker til Om profil */}
       <Link to="/Omprofil" className="profile-info">
         <div className="profile-picture">
           <img src="img/profilbillede.svg" alt="Profile" />
         </div>
         <div className="profile-name">
-          <p>Mit navn</p>
+          <p>Ursula Carlsen</p>
           <span>Vis min profil</span>
         </div>
       </Link>
 
-      {/* Main profile options */}
+      {/* Main profil muligheder */}
       <div className="profile-options">
         <button className="option-button">
           <img
@@ -63,7 +64,7 @@ function Profil() {
         </button>
       </div>
 
-      {/* Additional profile actions */}
+      {/* Andre profil muligheder */}
       <div className="profile-extras">
         <button className="option-button">
           <img
@@ -91,7 +92,7 @@ function Profil() {
         </button>
       </div>
 
-      {/* Holiday mode section */}
+      {/* Ferie tilstand sektion */}
       <div className="profile-holiday">
         <button className="option-button">
           <img

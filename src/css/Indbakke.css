@@ -34,9 +34,9 @@ body {
   background: none;
   color: black;
   border: none;
-  position: absolute; /* Absolutely positioned to the left */
-  left: 20px; /* Adjust this value to set the distance from the left edge */
-  transform: translateY(0); /* Fine-tune vertical alignment, if needed */
+  position: absolute; 
+  left: 20px; 
+  transform: translateY(0); 
 }
 
 .indbakke {
