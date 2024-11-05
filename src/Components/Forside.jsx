@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import "../css/Forside.css";
 
 const items = [
-  { src: "img/projektor.webp", alt: "Projektor", name: "Projektor", price: "30 kr" },
+  { src: "img/projektor.webp", alt: "Projektor", name: "Projektor", price: "75 kr" },
   { src: "img/sækkevogn.webp", alt: "Sækkevogn", name: "Sækkevogn", price: "30 kr" },
-  { src: "/img/badminton.jpg", alt: "Badminton ketcher", name: "Badminton ketcher", price: "20 kr" },
-  { src: "img/soundboks.webp", alt: "Soundboks", name: "Soundboks", price: "300 kr" },
+  { src: "/img/badminton.jpg", alt: "Badminton ketcher", name: "Badminton ketcher", price: "25 kr" },
+  { src: "img/soundboks.webp", alt: "Soundboks", name: "Soundboks", price: "400 kr", badge: "3 d." },
   { src: "img/trillebør.webp", alt: "Trillebør", name: "Trillebør", price: "30 kr" },
   { src: "img/sav.webp", alt: "Geringsav", name: "Geringsav", price: "20 kr" },
-  { src: "/img/lysterapi.webp", alt: "Lysterapi lampe", name: "Lysterapi lampe", price: "50 kr", badge: "1-2 mdr." },
+  { src: "/img/lysterapi.webp", alt: "Lysterapi lampe", name: "Lysterapi lampe", price: "55 kr", badge: "1 mdr." },
   { src: "img/elektrisk-høvl.webp", alt: "Elektrisk høvl", name: "Elektrisk høvl", price: "50 kr" },
   { src: "img/stole.webp", alt: "4 stole", name: "4 stole", price: "30 kr" },
-  { src: "img/strikkepinde.webp", alt: "Strikkepinde sæt", name: "Strikkepinde sæt", price: "40 kr" },
+  { src: "img/strikkepinde.webp", alt: "Strikkepinde sæt", name: "Strikkepinde sæt", price: "35 kr", badge: "1 uge" },
 ];
 
 const HeartButton = ({ onClick, isLiked }) => (
@@ -58,7 +58,7 @@ function Forside() {
         <div className="scroll-category">Værktøj</div>
         <div className="scroll-category">Elektronik</div>
         <div className="scroll-category">Tøj</div>
-        <div className="scroll-category">Hobby</div>
+        <div className="scroll-category">Kreative værktøjer</div>
       </div>
 
       {/* Main Content */}

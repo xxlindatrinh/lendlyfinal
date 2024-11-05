@@ -40,7 +40,6 @@ body {
 
 .profile-info {
   display: flex;
-
   padding: 10px 0;
   background-color: rgba(31, 67, 7, 0.6);
   color: white;
@@ -90,4 +89,15 @@ body {
 
 .profile-picture img {
   width: 6.25rem;
+}
+
+.option-button {
+  display: flex; /* Gør knapperne til flex-containere */
+  align-items: center; /* Centrerer indholdet vertikalt */
+}
+
+.option-icon {
+  width: 35px; /* Juster størrelsen her */
+  height: 35px; /* Juster størrelsen her */
+  margin-right: 10px; /* Tilføjer afstand mellem ikonet og teksten */
 }
