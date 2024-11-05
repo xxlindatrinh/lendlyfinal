@@ -50,7 +50,7 @@ function Kategori() {
         <h2>Alle kategorier</h2>
         <div className="kategori-item">
           <img src="/ikoner/tøjikon.svg" alt="Beklædning icon" />
-          <span>Beklædning</span>
+          <span>Tøj</span>
         </div>
         <div className="kategori-item">
           <img src="/ikoner/læseikon.svg" alt="Bøger icon" />
