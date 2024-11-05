@@ -10,12 +10,13 @@ body {
   display: flex;
   align-items: center; /* Centers items vertically on the same line */
   justify-content: center; /* Centers the h1 horizontally */
-  font-size: 24px;
+  font-size: 16px;
   font-weight: bold;
-  margin-top: 30px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 5px;
   position: relative; /* Allows absolute positioning for the button */
   padding: 10px 0;
+  color: black;
 }
 
 #back-button {
@@ -44,6 +45,8 @@ body {
   display: flex;
   flex-direction: column; /* Stack items vertically */
   align-items: flex-start; /* Align items to the left */
+  /* background-color: rgba(31, 67, 7, 0.3); */
+  border-bottom: 1px solid #ffffff;
 }
 
 /* Styling for each item */
@@ -51,9 +54,11 @@ body {
   display: flex;
   align-items: center; /* Center items vertically */
   justify-content: left; /* Center items horizontally */
-  gap: 10px; /* Space between icon and text */
+  gap: 5px; /* Space between icon and text */
   padding: 10px;
   color: black;
+  border-bottom: 1px solid rgb(117, 115, 115);
+  width: 100%;
 }
 
 /* Icon Styling */
@@ -69,5 +74,8 @@ body {
 .populaer h2,
 .alle-kategorier h2 {
   font-weight: bold;
-  margin-bottom: 10px;
+  padding-top: 5px;
+  color: black;
+  padding-left: 10px;
+  font-size: 18px;
 }

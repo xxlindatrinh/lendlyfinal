@@ -1,142 +1,156 @@
 body {
-    margin: 0;
-    padding-bottom: 4.4375rem;
-    overflow-x: hidden;
-    background-color: #ffffff;
-  }
+  margin: 0;
+  padding-bottom: 4.4375rem;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
 
-  .indbakke-container {
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    overflow-x: hidden;
-  }
-  
-  .indbakke-header {
-    display: flex;
-    align-items: center; /* Centers items vertically on the same line */
-    justify-content: center; /* Centers the h1 horizontally */
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    position: relative; /* Allows absolute positioning for the button */
-    padding: 0;
-    color: black;
-  }
+.indbakke-container {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
 
-  #back-button {
-    padding-bottom: 20px;
-  }
-  
-  .back-button {
-    font-size: 16px;
-    background: none;
-    color: black;
-    border: none;
-    position: absolute; /* Absolutely positioned to the left */
-    left: 20px; /* Adjust this value to set the distance from the left edge */
-    transform: translateY(0); /* Fine-tune vertical alignment, if needed */
-  }
+.indbakke-header {
+  display: flex;
+  align-items: center; /* Centers items vertically on the same line */
+  justify-content: center; /* Centers the h1 horizontally */
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  position: relative; /* Allows absolute positioning for the button */
+  padding: 0;
+  color: black;
+}
 
-.indbakke {
-    font-family: Arial, sans-serif;
-    padding: 10px;
-    background-color: #ffffff;
-    padding-bottom: 4.4375rem;
+#back-button {
+  padding-bottom: 20px;
 }
 
 .back-button {
-    margin-right: 10px;
-    font-size: 16px;
-    color: #333;
-    background: none;
-    border: none;
+  font-size: 16px;
+  background: none;
+  color: black;
+  border: none;
+  position: absolute; /* Absolutely positioned to the left */
+  left: 20px; /* Adjust this value to set the distance from the left edge */
+  transform: translateY(0); /* Fine-tune vertical alignment, if needed */
+}
+
+.indbakke {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  background-color: #ffffff;
+  padding-bottom: 4.4375rem;
+}
+
+.back-button {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #333;
+  background: none;
+  border: none;
 }
 
 .tabs {
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .tab {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #333;
-    background: none;
-    border: none;
-    cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #333;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .tab.active {
-    border-bottom: 2px solid black;
-    font-weight: bold;
+  border-bottom: 2px solid black;
+  font-weight: bold;
 }
 
 .messages-list {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .message-item {
-    display: flex;
-    align-items: flex-start;
-    padding: 10px;
-    background-color: #fff;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
 .message-profile {
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .profile-image {
-    width: 40px;
-    height: 40px;
-    background-color: #333;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
 }
 
 .message-content {
-    flex: 1;
-    margin-left: 10px;
+  flex: 1;
+  margin-left: 10px;
 }
 
 .message-header {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
 }
 
 .message-name {
-    font-weight: bold;
-    color: #333;
+  font-weight: bold;
+  color: #333;
 }
 
 .message-time {
-    color: #999;
+  color: #999;
 }
 
 .message-text {
-    font-size: 16px;
-    color: #333;
-    margin: 5px 0;
-    text-align: left;
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+  text-align: left;
+}
+
+.message-image {
+  width: 60px;
+  height: 60px;
+  margin-top: 5px; /* Adds space above the image */
+  margin-left: 0; /* Aligns the image to the left */
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
 .indbakke-image-placeholder {
-    width: 60px;
-    height: 60px;
-    background-color: #e0e0e0;
-    border: 1px solid #ccc;
-    margin-top: 5px;
+  width: 60px;
+  height: 60px;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.message-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

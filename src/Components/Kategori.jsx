@@ -56,6 +56,18 @@ function Kategori() {
           <img src="/ikoner/læseikon.svg" alt="Bøger icon" />
           <span>Bøger</span>
         </div>
+        <div className="kategori-item">
+          <img src="/ikoner/værktøj_ikon.svg" alt="Værktøj icon" />
+          <span>Værktøj</span>
+        </div>
+        <div className="kategori-item">
+          <img src="/ikoner/husoghave_ikon.svg" alt="Hus og have icon" />
+          <span>Hus og have</span>
+        </div>
+        <div className="kategori-item">
+          <img src="/ikoner/maleikon.svg" alt="Kreative værktøjer icon" />
+          <span>Kreative værktøjer</span>
+        </div>
       </div>
     </>
   );
