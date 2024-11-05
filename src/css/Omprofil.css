@@ -1,16 +1,10 @@
-/* General styling for the Omprofil component */
-html, body {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    box-sizing: border-box;
-}
+/* Omprofil.css */
 
 .omprofil {
-    padding: 0; /* Removed padding to align full width */
+    padding: 20px;
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
-    color: #000; /* Set text to black for the entire page */
+    color: #000;
 }
 
 /* Profile header styling */
@@ -19,15 +13,19 @@ html, body {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+    padding-top: 30px;
+    position: relative; /* Ensure children are positioned relative to header */
+    width: 100%;
 }
 
-.back-button {
-    align-self: flex-start;
-    background: none;
-    border: none;
-    color: #2f4f2f;
-    font-size: 16px;
-    cursor: pointer;
+
+/* Profile title styling */
+.profile-title {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 10px;
 }
 
 .profile-tabs {
@@ -50,72 +48,64 @@ html, body {
     border-bottom: 2px solid #2f4f2f;
 }
 
-/* Profile info styling */
-.profile-content {
-    background-color: #8a9a5b; /* Greenish background to match the mockup */
+/* Profile section styling */
+.profile-section {
+    background-color: #8a9a5b;
     padding: 20px;
     margin-bottom: 20px;
-    width: 100vw; /* Ensure the green box fills the whole page width */
+    width: 100%;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: flex-start;
-    border-radius: 0; /* Remove rounded corners */
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%); /* Ensure the box is centered and full width */
+    border-radius: 5px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-.profile-header-content {
+.profile-section.full-width {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.profile-top {
     display: flex;
     align-items: center;
-    text-align: left;
-    gap: 20px;
-    flex-direction: row;
+    margin-bottom: 15px;
 }
 
 .profile-avatar {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     background-color: #ccc;
-    border-radius: 50%; /* Make the profile picture round */
-}
-
-.profile-details {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
 .profile-details h2 {
     margin: 0;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
-    color: #000; /* Set text color to black */
+    color: #000;
 }
 
-.profile-content-content {
+/* Profile info items styling */
+.profile-section-content {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Increase the gap for better spacing */
+    gap: 10px;
 }
 
-.profile-content-content p {
+.profile-info-item {
     display: flex;
     align-items: center;
-    gap: 15px; /* Space between the icon and text */
-    margin: 0;
+    gap: 10px;
     font-size: 16px;
-    color: #000; /* Set text color to black */
+    color: #000;
 }
 
-.profile-content-content p img {
-    flex-shrink: 0;
-    width: 70px; /* Set icon size to 70px */
-    height: 70px; /* Set icon size to 70px */
-    align-self: center; /* Center the image */
+.profile-info-item img {
+    width: 24px;
+    height: 24px;
 }
 
 /* Profile listings styling */
@@ -127,13 +117,14 @@ html, body {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #000; /* Set text color to black */
+    color: #000;
 }
 
 .listing-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 30px;
 }
 
 .listing-item {
@@ -141,20 +132,16 @@ html, body {
     overflow: hidden;
     background-color: #fff;
     position: relative;
-}
-
-.listing-image {
-    position: relative;
-    height: 100px;
-    background-color: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .listing-image img {
     width: 100%;
-    height: auto;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .listing-status {
@@ -163,7 +150,7 @@ html, body {
     right: 5px;
     background-color: #2f4f2f;
     color: #fff;
-    padding: 2px 6px;
+    padding: 2px 8px;
     font-size: 12px;
     border-radius: 5px;
 }
@@ -172,14 +159,14 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding-top: 10px;
 }
 
 .listing-info p {
     margin: 0;
     font-size: 16px;
     font-weight: normal;
-    color: #000; /* Set text color to black */
+    color: #000;
 }
 
 .edit-icon-placeholder {
@@ -189,54 +176,4 @@ html, body {
     background-color: #333;
     border-radius: 3px;
     cursor: pointer;
-}
-
-/* Adjusting overall layout to match the mockup */
-.omprofil h1 {
-    font-size: 26px;
-    font-weight: bold;
-    margin: 20px 0;
-    color: #000; /* Set text color to black */
-}
-
-.profile-tabs {
-    justify-content: center;
-}
-
-/* Aligning content properly within profile-info to match the mockup */
-.profile-content {
-    align-items: flex-start;
-    width: 100vw; /* Ensure the green box fills the whole page width */
-    padding: 20px;
-    box-sizing: border-box;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%); /* Ensure the box is centered and full width */
-}
-
-.profile-header-content {
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-}
-
-.profile-details {
-    align-items: flex-start;
-}
-
-/* Aligning icons and text horizontally */
-.profile-content-content p {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px; /* Ensure space between the icon and text is sufficient */
-    color: #000; /* Ensure text is black */
-    line-height: 1; /* Ensure line height doesn’t push text down */
-}
-
-.profile-content-content p img {
-    flex-shrink: 0;
-    width: 70px !important; /* Set icon size to 70px with importance */
-    height: 70px !important; /* Set icon size to 70px with importance */
-    align-self: center; /* Center the image */
 }

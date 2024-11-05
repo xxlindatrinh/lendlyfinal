@@ -1,0 +1,32 @@
+{
+  "listings": {
+      "listing1": {
+          "title": "Example Listing",
+          "price": 100,
+          "deposit": 50,
+          "category": "Tools",
+          "condition": "New",
+          "description": "This is a test description",
+          "location": "Aarhus, Denmark",
+          "imageUrls": [
+              "/img/elektrisk-høvl.webp"
+          ],
+          "timestamp": 1698961200000,
+          "isRented": false
+      },
+      "listing2": {
+          "title": "Another Example",
+          "price": 200,
+          "deposit": 75,
+          "category": "Electronics",
+          "condition": "Used",
+          "description": "This is another test description",
+          "location": "Aarhus, Denmark",
+          "imageUrls": [
+              "/img/elektrisk-høvl.webp"
+          ],
+          "timestamp": 1698961200000,
+          "isRented": false
+      }
+  }
+}
