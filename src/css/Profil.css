@@ -15,7 +15,7 @@ body {
   display: flex;
   align-items: center; /* Centers items vertically on the same line */
   justify-content: center; /* Centers the h1 horizontally */
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 5px;
