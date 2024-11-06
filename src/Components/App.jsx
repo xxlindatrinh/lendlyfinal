@@ -20,8 +20,9 @@ import OmProfil from "./OmProfil";
 import Loading from "./Loadingscreen";
 
 function App() {
+  // Set the basename to match your GitHub Pages repository name
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/lendlyfinal">
       <Main />
     </BrowserRouter>
   );
@@ -40,7 +41,7 @@ function Main() {
     }
   }, [hasLoaded, navigate]);
 
-  // Routes hvor Bottomnav ikke skal vises
+  // Routes where BottomNav should not be displayed
   const noBottomNavRoutes = ["/OpretProfil", "/Onboarding", "/Loadingscreen"];
   const showBottomNav = !noBottomNavRoutes.includes(location.pathname);
 
@@ -64,3 +65,4 @@ function Main() {
 }
 
 export default App;
+
