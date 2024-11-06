@@ -1,0 +1,115 @@
+/* Basic reset */
+
+main {
+  padding-bottom: 4.4375rem;
+  padding-top: 1.25rem;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  margin: 0;
+}
+/* Forside Content */
+.favoritter-container {
+  text-align: center;
+  width: 100%;
+  padding: 0 8px;
+}
+
+.favoritter-container h1 {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-items: center;
+  width: 100%;
+  padding: 0;
+}
+
+.grid-item {
+  text-align: center;
+  padding: 0;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+}
+
+.image-placeholder {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.grid-item p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Badge Styling */
+.badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: rgba(31, 67, 7, 0.3);
+  color: white;
+  padding: 2px 4px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+/* Heart Button Styling */
+.heart-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.heart-icon {
+  font-size: 24px;
+  color: rgba(128, 128, 128, 0.5); /* Semi-transparent gray */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.heart-icon.liked {
+  color: #a53535; /* Softer, more pleasant red */
+  transform: scale(1.2); /* Slight pop effect */
+}
+
+.favorit-header {
+  display: flex;
+  align-items: center; /* Centers items vertically on the same line */
+  justify-content: center; /* Centers the h1 horizontally */
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  position: relative; /* Allows absolute positioning for the button */
+  padding: 10px 0;
+  color: black;
+}
+
+#back-button {
+  padding-bottom: 20px;
+}
+
+.back-button {
+  font-size: 16px;
+  background: none;
+  border: none;
+  position: absolute; /* Absolutely positioned to the left */
+  left: 20px; /* Adjust this value to set the distance from the left edge */
+  transform: translateY(0); /* Fine-tune vertical alignment, if needed */
+}
