@@ -1,13 +1,13 @@
 // Astrid
 import React, { useState } from "react";
-import { ref, push, set } from "firebase/database";
+import { ref, push, set } from "Firebase/database";
 import {
   ref as storageRef,
   uploadBytes,
   getDownloadURL,
-} from "firebase/storage";
+} from "Firebase/storage";
 import "../css/Upload.css";
-import { database, storage } from "./firebase";
+import { database, storage } from "./Firebase";
 
 const tilfoejbilleder = "/ikoner/tilfoejbilleder.svg";
 
