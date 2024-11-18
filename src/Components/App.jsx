@@ -22,6 +22,7 @@ import Loading from "./Loadingscreen";
 function App() {
   return (
     <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.DEV ? "/" : "/lendlyfinal/"}></BrowserRouter>
       <Main />
     </BrowserRouter>
   );
