@@ -4,7 +4,7 @@ import "../css/Omprofil.css"; // Import the CSS
 import lokationIcon from "/ikoner/lokation.png";
 import sidstSetIcon from "/ikoner/sidstset.png";
 import stjerneIcon from "/ikoner/stjerne_ikon.png";
-import { database } from "./firebase"; // Import Firebase setup
+import { database } from "./Firebase"; // Import Firebase setup
 import { ref, onValue } from "firebase/database";
 import { useNavigate } from "react-router-dom";
 
