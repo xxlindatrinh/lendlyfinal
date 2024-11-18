@@ -1,7 +1,7 @@
 // Camilla
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../css/Opretprofil.css";
+import "../css/OpretProfil.css";
 
 const Opretprofil = () => {
   const [action, setAction] = useState("Opret dig");
