@@ -1,11 +1,11 @@
 // Astrid
 import React, { useState } from "react";
-import { ref, push, set } from "Firebase/database";
+import { ref, push, set } from "firebase/database";
 import {
   ref as storageRef,
   uploadBytes,
   getDownloadURL,
-} from "Firebase/storage";
+} from "firebase/storage";
 import "../css/Upload.css";
 import { database, storage } from "./Firebase";
 
