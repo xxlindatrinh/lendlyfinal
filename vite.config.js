@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc"; // Use "@vitejs/plugin-react" if "react-swc" isn't installed
+import react from "@vitejs/plugin-react"; 
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => {
@@ -10,7 +10,7 @@ export default defineConfig(({ command }) => {
 
     // Adjust the base path only for non-development modes (e.g., build)
     if (command !== "serve") {
-        config.base = "/lendlyfinal/"; // Ensure you use "/lendlyfinal/" exactly
+        config.base = "/lendlyfinal/";
     }
 
     return config;
