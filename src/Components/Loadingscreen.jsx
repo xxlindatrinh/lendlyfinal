@@ -18,7 +18,7 @@ function Loading() {
 
   return (
     <div className="loading-screen">
-      <img src="/ikoner/Lendlylogo.svg" alt="Lendly Logo" className="logo" />
+      <img src="ikoner/Lendlylogo.svg" alt="Lendly Logo" className="logo" />
     </div>
   );
 }
