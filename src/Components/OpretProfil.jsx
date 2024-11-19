@@ -40,7 +40,7 @@ const Opretprofil = () => {
           <div></div>
         ) : (
           <div className="input">
-            <img src="/ikoner/user.svg" alt="" />
+            <img src="ikoner/user.svg" alt="" />
             <input
               type="text"
               placeholder="Navn"
@@ -51,7 +51,7 @@ const Opretprofil = () => {
         )}
 
         <div className="input">
-          <img src="/ikoner/email.svg" alt="" />
+          <img src="ikoner/email.svg" alt="" />
           <input
             type="email"
             placeholder="Email"
@@ -60,7 +60,7 @@ const Opretprofil = () => {
           />
         </div>
         <div className="input">
-          <img src="/ikoner/password.svg" alt="" />
+          <img src="ikoner/password.svg" alt="" />
           <input
             type="password"
             placeholder="Adgangskode"
