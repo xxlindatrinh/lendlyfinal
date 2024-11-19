@@ -5,7 +5,7 @@ import {
   useLocation,
   useNavigate,
 } from "react-router-dom";
-import { useEffect, useState } from "react"; 
+import { useEffect, useState } from "react";
 import "../css/App.css";
 import Forside from "./Forside";
 import Kategori from "./Kategori";
@@ -21,8 +21,7 @@ import Loading from "./Loadingscreen";
 
 function App() {
   return (
-    <BrowserRouter>
-    <BrowserRouter basename={import.meta.env.DEV ? "/" : "/lendlyfinal/"}></BrowserRouter>
+    <BrowserRouter basename={import.meta.env.DEV ? "/" : "/lendlyfinal/"}>
       <Main />
     </BrowserRouter>
   );
