@@ -9,7 +9,7 @@ import {
 import "../css/Upload.css";
 import { database, storage } from "./Firebase";
 
-const tilfoejbilleder = "/ikoner/tilfoejbilleder.svg";
+const tilfoejbilleder = "ikoner/tilfoejbilleder.svg";
 
 function Upload() {
   const [title, setTitle] = useState("");

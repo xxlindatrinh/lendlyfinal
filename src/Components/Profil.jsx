@@ -32,7 +32,7 @@ function Profil() {
       <div className="profile-options">
         <button className="option-button">
           <img
-            src="/ikoner/mine_lejeaftaler_ikon.svg"
+            src="ikoner/mine_lejeaftaler_ikon.svg"
             alt="Lejeaftaler"
             className="option-icon"
           />
@@ -40,7 +40,7 @@ function Profil() {
         </button>
         <button className="option-button">
           <img
-            src="/ikoner/mine_udlejninger_ikon.svg"
+            src="ikoner/mine_udlejninger_ikon.svg"
             alt="Udlejninger"
             className="option-icon"
           />
@@ -48,7 +48,7 @@ function Profil() {
         </button>
         <button className="option-button">
           <img
-            src="/ikoner/brugertilpasning_ikon.svg"
+            src="ikoner/brugertilpasning_ikon.svg"
             alt="Brugertilpasning"
             className="option-icon"
           />
@@ -56,7 +56,7 @@ function Profil() {
         </button>
         <button className="option-button">
           <img
-            src="/ikoner/gruppe_ikon.svg"
+            src="ikoner/gruppe_ikon.svg"
             alt="Mine grupper"
             className="option-icon"
           />
@@ -68,7 +68,7 @@ function Profil() {
       <div className="profile-extras">
         <button className="option-button">
           <img
-            src="/ikoner/inviter_venner_ikon.svg"
+            src="ikoner/inviter_venner_ikon.svg"
             alt="Inviter venner"
             className="option-icon"
           />
@@ -76,7 +76,7 @@ function Profil() {
         </button>
         <button className="option-button">
           <img
-            src="/ikoner/hjælpecenter_ikon.svg"
+            src="ikoner/hjælpecenter_ikon.svg"
             alt="Hjælpecenter"
             className="option-icon"
           />
@@ -84,7 +84,7 @@ function Profil() {
         </button>
         <button className="option-button">
           <img
-            src="/ikoner/om_lendy_ikon.svg"
+            src="ikoner/om_lendy_ikon.svg"
             alt="Om Lendly"
             className="option-icon"
           />
@@ -96,7 +96,7 @@ function Profil() {
       <div className="profile-holiday">
         <button className="option-button">
           <img
-            src="/ikoner/ferie_ikon.svg"
+            src="ikoner/ferie_ikon.svg"
             alt="Ferie­tilstand"
             className="option-icon"
           />

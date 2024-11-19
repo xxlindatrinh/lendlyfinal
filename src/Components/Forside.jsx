@@ -16,7 +16,7 @@ const items = [
     price: "30 kr",
   },
   {
-    src: "/img/badminton.jpg",
+    src: "img/badminton.jpg",
     alt: "Badminton ketcher",
     name: "Badminton ketcher",
     price: "25 kr",
@@ -36,7 +36,7 @@ const items = [
   },
   { src: "img/sav.webp", alt: "Geringsav", name: "Geringsav", price: "20 kr" },
   {
-    src: "/img/lysterapi.webp",
+    src: "img/lysterapi.webp",
     alt: "Lysterapi lampe",
     name: "Lysterapi lampe",
     price: "55 kr",
@@ -91,7 +91,7 @@ function Forside() {
           <input type="text" placeholder="Hvad søger du?" />
         </div>
         <div className="lokation">
-          <img src="/ikoner/location.svg" alt="lokation" />
+          <img src="ikoner/location.svg" alt="lokation" />
         </div>
       </div>
 

@@ -107,7 +107,7 @@ function Onboarding() {
             <>
               <h2>Vælg lokation</h2>
               <img
-                src={`/ikoner/find_lokation.svg`}
+                src={`ikoner/find_lokation.svg`}
                 alt="Onboarding Slide 1"
                 className="location-image onboarding-image-1"
               />
@@ -124,7 +124,7 @@ function Onboarding() {
             <>
               <h2>Lej og udlej</h2>
               <img
-                src={`/ikoner/laan_og_del.svg`}
+                src={`ikoner/laan_og_del.svg`}
                 alt="Onboarding Slide 2"
                 className="location-image onboarding-image-2"
               />
@@ -141,7 +141,7 @@ function Onboarding() {
             <>
               <h2>Lej og udlej sikkert</h2>
               <img
-                src={`/ikoner/laan_sikkert.svg`}
+                src={`ikoner/laan_sikkert.svg`}
                 alt="Onboarding Slide 3"
                 className="location-image onboarding-image-3"
               />
